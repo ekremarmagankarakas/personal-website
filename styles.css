@@ -12,8 +12,15 @@ body, html {
     width: 100%;
 }
 
+/* Sidebar styles */
 .sidebar {
-    width: 105px;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar.active {
+    width: 500px;
     background-color: #d3d3d3; /* Light gray background */
     padding: 20px;
     display: flex;
@@ -21,10 +28,19 @@ body, html {
     z-index: 1; /* Set z-index lower than bubbles */
 }
 
+/* Button to toggle the sidebar */
+.toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
 .name {
     color: #000; /* Black color for the name */
     font-size: 24px; /* Increased font size */
     font-weight: bold;
+    margin-top: 50px;
     margin-bottom: 50px; /* More space below the name */
 }
 
@@ -179,7 +195,7 @@ section span {
         opacity: 1;
     }
     100% {
-        transform: translateY(-600%);
+        transform: translateY(-1200%);
         opacity: 1;
     }
 }

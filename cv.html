@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-	<nav class="sidebar">
+	<nav class="sidebar" id="sidebar">
             <div class="name">Ekrem Armagan Karakas</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -142,5 +142,12 @@
             </section>
         </div>
     </div>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Toggle Sidebar</button>
 </body>
 </html>

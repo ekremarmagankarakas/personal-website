@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar"> <!-- Added id="sidebar" here -->
             <div class="name">Ekrem Armagan Karakas</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -59,9 +59,16 @@
 	    	    <div class="project-description">
         	         My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
     		    </div>	
-                </div>            </div>
+                </div>           
+	     </div>
         </div>
     </div>
-    <script src="script.js"></script> <!-- Link to your JavaScript file if needed -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Toggle Sidebar</button>
 </body>
 </html>

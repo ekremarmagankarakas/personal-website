@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar">
             <div class="name">Ekrem Armagan Karakas</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,7 +51,7 @@
 
             createElement.style.width = 20 + size + 'px';
             createElement.style.height = 20 + size + 'px';
-            createElement.style.left = Math.random() * 80 + 5 + "px";
+            createElement.style.left = Math.random() * 80 + 1100 + "px";
             createElement.textContent = skills[Math.floor(Math.random() * skills.length)];
             section.appendChild(createElement);
 
@@ -61,5 +61,13 @@
         }
         setInterval(createBubble, 600);
     </script>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Toggle Sidebar</button>
 </body>
 </html>
