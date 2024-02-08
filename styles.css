@@ -30,7 +30,7 @@ body, html {
 }
 
 .toggle-sidebar {
-    width: 20px; /* Adjust the width as needed */
+    width: 30px; /* Adjust the width as needed */
     height: auto; /* Let the height adjust automatically based on the width */
     position: fixed;
     top: 20px;
