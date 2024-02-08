@@ -33,6 +33,7 @@ body, html {
 }
 
 .name {
+    font-family: 'Arial', sans-serif;
     color: #000; /* Black color for the name */
     font-size: 24px; /* Increased font size */
     font-weight: bold;
@@ -47,6 +48,7 @@ body, html {
 }
 
 .sidebar ul li a {
+    font-family: 'Arial', sans-serif;
     text-decoration: none;
     color: #ff0000; /* Red color for the text */
     display: block;

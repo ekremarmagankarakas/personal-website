@@ -120,3 +120,11 @@ body, html {
     font-size: 18px;
     margin-top: 10px;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}

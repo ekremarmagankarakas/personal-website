@@ -200,3 +200,11 @@ section span {
         opacity: 1;
     }
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
