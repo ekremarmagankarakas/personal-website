@@ -10,6 +10,7 @@ body, html {
 .container {
     display: flex;
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* Sidebar styles */
@@ -28,8 +29,9 @@ body, html {
     z-index: 1; /* Set z-index lower than bubbles */
 }
 
-/* Button to toggle the sidebar */
 .toggle-sidebar {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust automatically based on the width */
     position: fixed;
     top: 20px;
     left: 20px;
@@ -70,6 +72,7 @@ body, html {
     overflow-y: auto; /* Enable scrolling if content is taller than screen */
     box-shadow: -5px 0 15px rgba(0,0,0,0.2), 5px 0 15px rgba(0,0,0,0.2);
     position: relative; /* For z-index to work */
+    overflow-x: hidden;
     z-index: 2; /* Set z-index lower than bubbles */
 }
 

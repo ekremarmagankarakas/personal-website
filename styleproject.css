@@ -29,8 +29,9 @@ body, html {
     z-index: 1; /* Set z-index lower than bubbles */
 }
 
-/* Button to toggle the sidebar */
 .toggle-sidebar {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust automatically based on the width */
     position: fixed;
     top: 20px;
     left: 20px;
