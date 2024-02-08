@@ -67,6 +67,7 @@ body, html {
     flex-grow: 1;
     background-color: #fff; /* White background for content */
     padding: 20px;
+    overflow-y: auto; /* Enable scrolling if content is taller than screen */
     box-shadow: -5px 0 15px rgba(0,0,0,0.2), 5px 0 15px rgba(0,0,0,0.2);
     position: relative; /* For z-index to work */
     z-index: 2; /* Set z-index lower than bubbles */

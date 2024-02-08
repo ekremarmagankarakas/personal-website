@@ -120,24 +120,3 @@ body, html {
     font-size: 18px;
     margin-top: 10px;
 }
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-        height: auto;
-    }
-    .main-content {
-        padding: 10px;
-    }
-    .projects-container {
-        justify-content: center;
-	gap: 10px;
-    }
-    .project {
-        flex-basis: calo(50% - 10px); /* Each project takes full width on smaller screens */
-    }
-}
