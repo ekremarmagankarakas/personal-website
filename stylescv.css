@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    font-family: 'Arial', sans-serif;
+    width: 105px;
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+}
+
+.name {
+    color: #000; /* Black color for the name */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 50px; /* More space below the name */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Lower the links */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Red color for the text */
+    display: block;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: border-left 0.3s;
+}
+
+.sidebar ul li a:hover {
+    border-left: 3px solid #ff0000; /* Red color on hover */
+}
+
+.main-content {
+    flex-grow: 1;
+    width: 100%; /* Expand content to the right side */
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2), 5px 0 15px rgba(0,0,0,0.2); /* More prominent shadows on both sides */
+    position: relative; /* For z-index to work */
+    z-index: 2; /* Increased z-index to ensure content is above sidebar */
+    overflow-y: auto;
+}
+
+.cv-section {
+    max-width: 800px; /* Or any max-width you prefer */
+    margin: auto; /* This will center the cv-section */
+    padding: 2px;
+}
+
+.cv-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.cv-section p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.cv-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.cv-section ul li {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cv-section {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Main container to hold sidebar and main content */
+.container {
+    display: flex; /* Use flexbox instead of grid */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 105px; /* Fixed width for sidebar */
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    z-index: 1; /* Set z-index lower than bubbles */
+}
+
+.name {
+    color: #000; /* Black color for the name */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 50px; /* More space below the name */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Lower the links */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Red color for the text */
+    display: block;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: border-left 0.3s;
+}
+
+.sidebar ul li a:hover {
+    border-left: 3px solid #ff0000; /* Red color on hover */
+}
+
+.main-content {
+    flex-grow: 1; /* Take remaining space */
+    overflow-y: auto; /* Enable scrolling if content is taller than screen */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2), 5px 0 15px rgba(0,0,0,0.2);
+    position: relative; /* For z-index to work */
+    z-index: 1; /* Set z-index lower than bubbles */}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-description {
+    margin-top: 10px; /* Add some space between the title and the description */
+    font-size: 14px; /* Set the font size for the description */
+    color: #666; /* A lighter text color for the description */
+    text-align: justify; /* Justify the text for better readability */
+}
+
+/* Projects container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Use gap for spacing between projects */
+}
+
+/* Individual project styles */
+.project {
+    flex-basis: calc(33.333% - 20px); /* Adjust size here, subtract the gap */
+    margin-bottom: 20px; /* Space at the bottom of each project */
+    border: 1px solid #000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .projects-container {
+        justify-content: center;
+	gap: 10px;
+    }
+    .project {
+        flex-basis: calo(50% - 10px); /* Each project takes full width on smaller screens */
+    }
+}

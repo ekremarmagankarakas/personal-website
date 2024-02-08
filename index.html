@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Ekrem Armagan Karakas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="name">Ekrem Armagan Karakas</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="hero">
+                <div class="hero-text">
+                    <p>👋 Hi there, I'm Ekrem Armagan Karakas and I am a</p>
+                    <h1>Computer Science student at <span class="highlight">Northeastern University</span></h1>
+                    <p>with a passion for applying technology to solve real-world problems. My academic and project work has focused on areas like cybersecurity, data science, and software development, and I've gained hands-on experience through internships in cloud technology and mobile software development. I'm particularly interested in leveraging my skills in Python, Java, and Flutter to create impactful software solutions. Outside of tech, I enjoy engaging in robotics projects, sports, and have a strong commitment to community service.</p>
+                    <div class="social-icons">
+                        <!-- Insert social media icons here -->
+                    </div>
+		    <div class="social-links">
+    	            	<a href="https://github.com/ekremarmagankarakas" class="button github" target="_blank">GitHub</a>
+    	                <a href="https://linkedin.com/in/ekrem-armagan-karakas" class="button linkedin" target="_blank">LinkedIn</a>
+	    	    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="ProfilePicturePNG.png" alt="Ekrem Armagan Karakas">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section></section> <!-- Add this section element -->
+    <script>
+        function createBubble() {
+            const section = document.querySelector('section');
+            const createElement = document.createElement('span');
+            var size = Math.random() * 60;
+            const skills = ["Python", "Java", "Racket", "C", "C++", "Go", "HTML", "CSS", "Arduino","Raspberry-Pi", "Git", "Amazon Workspace", "WordPress", "Flutter", 
+                    "Eclipse", "Jupyter Notebook", "RStudio", "IntelliJ", "Dr. Racket", 
+                    "PyCharm", "Android Studio", "MariaDB", "MySQL", "HeidiSQL", "VMware", 
+                    "VirtualBox", "WordPress", "Visual Studio Code"];
+
+
+            createElement.style.width = 20 + size + 'px';
+            createElement.style.height = 20 + size + 'px';
+            createElement.style.left = Math.random() * 80 + 5 + "px";
+            createElement.textContent = skills[Math.floor(Math.random() * skills.length)];
+            section.appendChild(createElement);
+
+            setTimeout(() => {
+                createElement.remove();
+            }, 4000);
+        }
+        setInterval(createBubble, 600);
+    </script>
+</body>
+</html>
