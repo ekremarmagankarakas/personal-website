@@ -149,6 +149,7 @@ body, html {
 
     .hero-text {
         max-width: 50%;
+        padding-top: 50px;
     }
 
     .hero-image img {
