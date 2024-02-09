@@ -144,20 +144,16 @@ body, html {
 /* Responsive design adjustments */
 @media (max-width: 1100px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-left: 0;
-        align-items: center; /* Ensure content is centered */
-        height: auto; /* Allow the hero section to grow */
+        height: 120vh;
     }
 
     .hero-text {
         max-width: 50%;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
     .hero-image img {
-        max-width: 30%; /* Increase or decrease the max width as needed */
+        max-width: 50%; /* Increase or decrease the max width as needed */
     }
 
     .hero-text h1 {
