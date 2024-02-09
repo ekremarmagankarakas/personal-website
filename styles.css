@@ -313,21 +313,23 @@ body, html {
         }
 
 .contact-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0;
+    margin-top: 20px;
 }
 
-    .contact-info img {
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the space between each contact item */
+}
+
+    .contact-item img {
         width: 24px;
         height: 24px;
-        vertical-align: middle;
+        margin-right: 10px; /* Space between the icon and the text */
     }
 
-    .contact-info div {
+    .contact-item div {
         font-size: 16px;
-        display: inline-block;
-        vertical-align: middle;
     }
+
 
