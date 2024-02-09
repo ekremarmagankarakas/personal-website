@@ -8,60 +8,6 @@ body, html {
     width: 100%;
 }
 
-/* Sidebar styles */
-.sidebar {
-    width: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.sidebar.active {
-    width: 105px;
-    background-color: #d3d3d3; /* Light gray background */
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    z-index: 1; /* Set z-index lower than bubbles */
-}
-
-.toggle-sidebar {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Let the height adjust automatically based on the width */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-}
-
-.name {
-    font-family: 'Arial', sans-serif;
-    color: #000; /* Black color for the name */
-    font-size: 24px; /* Increased font size */
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px; /* More space below the name */
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 50px; /* Lower the links */
-}
-
-.sidebar ul li a {
-    font-family: 'Arial', sans-serif;
-    text-decoration: none;
-    color: #ff0000; /* Red color for the text */
-    display: block;
-    padding: 10px;
-    border-left: 3px solid transparent;
-    transition: border-left 0.3s;
-}
-
-.sidebar ul li a:hover {
-    border-left: 3px solid #ff0000; /* Red color on hover */
-}
-
 .main-content {
     flex-grow: 1;
     width: 100%; /* Expand content to the right side */
