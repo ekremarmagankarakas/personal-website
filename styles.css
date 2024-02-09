@@ -151,7 +151,7 @@ body, html {
     }
 
     .hero-text {
-        max-width: 60%;
+        max-width: 50%;
     }
 
     .hero-image img {
@@ -332,3 +332,14 @@ body, html {
         display: inline-block;
         vertical-align: middle;
     }
+
+/* Existing styles for hero, hero-text, and hero-image img */
+
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        align-items: center; /* Ensure content is centered */
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow the hero section to grow */
+    }
+}
