@@ -34,46 +34,114 @@
             </div>
             <div class="separator"></div>
             <div id="projects">
-                <h1 class="header">Projects</h1>
-                <div class="projects-container">
+                <h1 class="projects-header">My <span class="highlight">Projects</span></h1>
+                <p class="projects-description">Here is a showcase of my work ranging from academic endeavors to personal passions. Each project reflects my commitment to innovation, learning, and excellence in computer science.</p>                <div class="projects-container">
                     <!-- Project 1 -->
-                    <div class="project" onclick="location.href='project1.html'">
+                    <div class="project" onclick="openModal('myModal1')">
                         <img src="soccer.jpg" alt="UK Soccer Player Valuation Analysis">
                         <div class="project-title">UK Soccer Player Valuation Analysis</div>
                         <div class="project-description">
                             The project involved creating a statistical model to estimate UK soccer players' transfer values, offering an impartial assessment tool for the transfer market. It analyzed players' performance metrics and other factors to identify cost-effective and strategic profiles for soccer team management. The primary aim was to link players' on-pitch performance with their market value, enhancing resource allocation decisions in club management. CLICK TO READ MORE
                         </div>
                     </div>
+                    <!-- The Modal -->
+                    <div id="myModal1" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
+                        </div>
+                    </div>
                     <!-- Project 2 -->
-                    <div class="project" onclick="location.href='project2.html'">
+                    <div class="project" onclick="openModal('myModal2')">
                         <img src="reversi.png" alt="Reversi Game Development">
                         <div class="project-title">Reversi Game Development</div>
                         <div class="project-description">
                             The project involved developing a Reversi game using Java, featuring a hexagonal grid, adaptable to various sizes and adhering to the standard rules for two players. It was built on a model-view-controller architecture, with the model handling the game's state, rules, and interactions, while the view provided textual output, designed with potential for future graphical upgrades. This endeavor showcases advanced Java application in algorithm creation, game development, AI strategies, and comprehensive unit testing. CLICK TO READ MORE
                         </div>
                     </div>
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
+                        </div>
+                    </div>
                     <!-- Project 3 -->
-                    <div class="project" onclick="location.href='project3.html'">
+                    <div class="project" onclick="openModal('myModal3')">
                         <img src="karakaslargroup.png" alt="Karakaslar Group Application">
                         <div class="project-title">Karakaslar Group Application</div>
                         <div class="project-description">
                             The founder of "Karakaşlar Group" requested an application to streamline the approval of worker requests, leading to the creation of a system with three types of accounts: manager, employee, and accountant. Employees can submit entries for necessary items, which managers can approve or decline, while accountants monitor all entries without approval rights. The application features secure login, personalized entry visibility, categorization, and historical data analysis. CLICK TO READ MORE
                         </div>
                     </div>
+                    <!-- The Modal -->
+                    <div id="myModal3" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
+                        </div>
+                    </div>
                     <!-- Project 4 -->
-                    <div class="project" onclick="location.href='project5.html'">
+                    <div class="project" onclick="openModal('myModal4')">
                         <img src="secimodasi.png" alt="The Safe Election Room Project">
                         <div class="project-title">The Safe Election Room Project</div>
                         <div class="project-description">
                             The project introduced an innovative voting system utilizing barcodes, sensors, and Arduino to ensure election integrity, which gained media recognition in Fortune 40 magazine as a potential solution for election security challenges. It was honored with the First Place Award at the International ROBORAVE Robotics Competition in May 2019, showcasing its effectiveness and ingenuity in creating a secure and fair voting environment. This accomplishment not only highlights technological innovation but also contributes to the ongoing discussion on improving electoral processes worldwide. CLICK TO READ MORE
                         </div>
                     </div>
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
+                        </div>
+                    </div>
                     <!-- Project 5 -->
-                    <div class="project" onclick="location.href='project4.html'">
+                    <div class="project" onclick="openModal('myModal5')">
                         <img src="geleceksizin.png" alt="The Future is Yours Book Project">
                         <div class="project-title">The Future is Yours Book Project</div>
                         <div class="project-description">
                             My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
+                        </div>`
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project" onclick="openModal('myModal6')">
+                        <img src="websitePhoto.png" alt="Personal Website Project">
+                        <div class="project-title">Personal Website Project</div>
+                        <div class="project-description">
+                            My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal6" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+                            <h1>Project Title</h1>
+                            <p>Project description...</p>
                         </div>
                     </div>
                 </div>
@@ -166,6 +234,26 @@
             });
         });
     </script>
+    <script>
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
 
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
