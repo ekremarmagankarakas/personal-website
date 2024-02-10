@@ -23,13 +23,13 @@
                     <h1>Computer Science student at <span class="highlight">Northeastern University</span></h1>
                     <p>with a passion for applying technology to solve real-world problems. My academic and project work has focused on areas like cybersecurity, data science, and software development, and I've gained hands-on experience through internships in cloud technology and mobile software development. I'm particularly interested in leveraging my skills in Python, Java, and Flutter to create impactful software solutions. Outside of tech, I enjoy engaging in robotics projects, sports, and have a strong commitment to community service.</p>
                     <div class="social-icons">
-                        <a href="cv.html" target="_blank"><img src="resumeIcon.png" alt="resume" title="resume"></a>
-                        <a href="https://github.com/ekremarmagankarakas" target="_blank"><img src="githubIcon.png" alt="github" title="github"></a>
-                        <a href="https://linkedin.com/in/ekrem-armagan-karakas"><img src="linkedlnIcon.png" alt="linkedln" title="linkedln"></a>
+                        <a href="cv.html" target="_blank"><img src="img\resumeIcon.png" alt="resume" title="resume"></a>
+                        <a href="https://github.com/ekremarmagankarakas" target="_blank"><img src="img\githubIcon.png" alt="github" title="github"></a>
+                        <a href="https://linkedin.com/in/ekrem-armagan-karakas"><img src="img\linkedlnIcon.png" alt="linkedln" title="linkedln"></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="ProfilePicturePNG.png" alt="Ekrem Armagan Karakas">
+                    <img src="img\ProfilePicturePNG.png" alt="Ekrem Armagan Karakas">
                 </div>
             </div>
             <div class="separator"></div>
@@ -38,7 +38,7 @@
                 <p class="projects-description">Here is a showcase of my work ranging from academic endeavors to personal passions. Each project reflects my commitment to innovation, learning, and excellence in computer science.</p>                <div class="projects-container">
                     <!-- Project 1 -->
                     <div class="project" onclick="openModal('myModal1')">
-                        <img src="soccer.jpg" alt="UK Soccer Player Valuation Analysis">
+                        <img src="img\soccer.jpg" alt="UK Soccer Player Valuation Analysis">
                         <div class="project-title">UK Soccer Player Valuation Analysis</div>
                         <div class="project-description">
                             The project involved creating a statistical model to estimate UK soccer players' transfer values, offering an impartial assessment tool for the transfer market. It analyzed players' performance metrics and other factors to identify cost-effective and strategic profiles for soccer team management. The primary aim was to link players' on-pitch performance with their market value, enhancing resource allocation decisions in club management. CLICK TO READ MORE
@@ -53,11 +53,6 @@
                             <div class="modal-body">
                                 <div class="modal-description">
                                     <h1>UK Soccer Player Valuation Analysis</h1>
-                                    <div class="modal-images">
-                                        <img src="soccer.jpg" alt="Image 1">
-                                        <img src="reversi.png" alt="Image 2">
-                                        <img src="karakaslargroup.png" alt="Image 3">
-                                    </div>
                                     <h2>Abstract</h2>
                                     <p>
                                         The Premier League is the most popular soccer league in the world, drawing global fans with various team affiliations. The pressure to
@@ -298,7 +293,7 @@
                     </div>
                     <!-- Project 2 -->
                     <div class="project" onclick="openModal('myModal2')">
-                        <img src="reversi.png" alt="Reversi Game Development">
+                        <img src="img\reversi.png" alt="Reversi Game Development">
                         <div class="project-title">Reversi Game Development</div>
                         <div class="project-description">
                             The project involved developing a Reversi game using Java, featuring a hexagonal grid, adaptable to various sizes and adhering to the standard rules for two players. It was built on a model-view-controller architecture, with the model handling the game's state, rules, and interactions, while the view provided textual output, designed with potential for future graphical upgrades. This endeavor showcases advanced Java application in algorithm creation, game development, AI strategies, and comprehensive unit testing. CLICK TO READ MORE
@@ -310,13 +305,29 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close" onclick="closeModal('myModal2')">&times;</span>
-                            <h1>Project Title</h1>
-                            <p>Project description...</p>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h1>Reversi Game</h1>
+                                    <div class="modal-images">
+                                        <img src="img\reversi.png" alt="Image 1">
+                                        <img src="img\reversi2.png" alt="Image 2">
+                                        <img src="img\reversi3.png" alt="Image 3">
+                                    </div>
+                                    <p>
+                                        Developing the Reversi game project involved meticulous planning and execution. Initially, the game's fundamental design was conceptualized, ensuring it adhered to standard Reversi rules but on a hexagonal grid, allowing for a unique gameplay experience. Key components such as the game board, state, and rules were established within the model, with the view handling simple textual output and the controller to be developed for managing inputs and system control flow. <br /> <br />
+                                        Subcomponents including player representation, game state, and grid coordinates were defined to facilitate game mechanics. The development process also included the integration of new classes and interfaces, enhancing functionality and user interaction. Mock models were introduced for testing purposes, ensuring robustness in grid coordinate handling and move validation. <br /> <br />
+                                        For user interaction, clickable cells and keyboard shortcuts were implemented, allowing players to select or deselect cells, place discs, or pass their turn. To improve the game logic, new methods were added to the model interface, and existing logic was refined to prevent illegal moves and provide a smoother gameplay experience. <br /> <br />
+                                        Subsequent updates focused on eliminating nulls in favor of optionals and lists, streamlining communication between the model and controllers through a callback interface, and introducing a broadcaster interface for model updates. The game state management was enhanced to handle game start and end conditions more effectively. <br /> <br />
+                                        The view underwent significant changes, with new methods added to the interface for improved user feedback and interaction, and the panel adapted to accommodate action listeners for mouse and keyboard events. The player component was refined to differentiate between human and AI players, with the latter using strategic algorithms to determine moves. <br /> <br />
+                                        Throughout the project, extensive testing and iterations were conducted to ensure the accuracy of game mechanics and the quality of user experience. The implementation demonstrated a commitment to creating a functional and engaging rendition of the Reversi game, showcasing the developers' skills in Java programming and software design.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="project" onclick="openModal('myModal3')">
-                        <img src="karakaslargroup.png" alt="Karakaslar Group Application">
+                        <img src="img\karakaslargroup.png" alt="Karakaslar Group Application">
                         <div class="project-title">Karakaslar Group Application</div>
                         <div class="project-description">
                             The founder of "Karakaşlar Group" requested an application to streamline the approval of worker requests, leading to the creation of a system with three types of accounts: manager, employee, and accountant. Employees can submit entries for necessary items, which managers can approve or decline, while accountants monitor all entries without approval rights. The application features secure login, personalized entry visibility, categorization, and historical data analysis. CLICK TO READ MORE
@@ -328,13 +339,29 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close" onclick="closeModal('myModal3')">&times;</span>
-                            <h1>Project Title</h1>
-                            <p>Project description...</p>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h1>KarakaslarGroup App</h1>
+                                    <div class="modal-images">
+                                        <img src="img\kg1.png" alt="Image 1">
+                                        <img src="img\kg2.png" alt="Image 2">
+                                        <img src="img\kg3.png" alt="Image 3">
+                                    </div>
+                                    <p>
+                                        My client is the founder of the construction company called “Karakaşlar Group.” My client builds shopping malls and manages some of them. He told me that he had a hard time managing the requirements and expenses, therefore, he asked me to write an application that would allow him to approve and decline entries from workers.
+                                        There are 3 types of accounts. The manager account, employee account and accountant account. From create account page, the user can create their account. They will have to choose which type of account they want to create, then from this page, they will enter a username, a password and the specific password for the account they want to create.  If this specific password is wrong, the account wouldn’t be created and an error message would pop up informing the user that the password is incorrect. This specific password would prevent workers or accountants from creating a managers account. Once the account is created, they would be able to login with their username and password. If the user enters a non-existent username or password, or the username and password does not match, they won’t be able to login and a message would pop up informing that the username or password is incorrect. <br /> <br />
+                                        Let’s enter to an employee’s account first. This is the main page that the employee sees when they login. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. It is important that they only see the entries they did, they cannot see the entries that another employee enters. They would also be able to search for specific words from the entries they have made. The employee can also make new entries. In order to do so, they would have to click the new entry button on the top right corner. The username data is carried on this page. The user enters the item they request, the price of the item and the explanation for why they need that item and press enter in order to make the request. The request is added to the database with the username and the date at which the entry was made. The new entry is added into the previous entries on the home page of the employee account. <br /> <br />
+                                        Now let’s look at a manager’s account. The first page that comes up is the home page. The manager would be able to see all the awaiting entries made by the employees. They would be able to approve or decline the entries. The manager would be able to see the whole history of entries from the history page. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. In addition to the employees account, the manager would be able to see the total price for each category and in total. Also the manager would be able to see all the entries entered daily, monthly and yearly. Furthermore, the manager would be able to search for specific words in the entries and the data would be updated accordingly. <br /> <br />
+                                        The last one is the accountant account. The accountant account is very similar to the manager account, with the only difference being that accountants cannot approve or decline offers, they can only monitor the whole entries entered by every worker. <br /> <br />
+                                        There are also some improvements that could be made. Firstly, entry categories could be made in order for the entries to be more neatly organised. Secondly, a calendar page could be added to the manager’s account and the accountant’s account. This would help them see every entry day by day visually. Furthermore, the history page could have been written to a pdf in order for it to be printed with ease or secured in the accountancy. Lastly, a mobile application could also be made in order for the users to be able to access the database without the need of a computer
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Project 4 -->
                     <div class="project" onclick="openModal('myModal4')">
-                        <img src="secimodasi.png" alt="The Safe Election Room Project">
+                        <img src="img\secimodasi.png" alt="The Safe Election Room Project">
                         <div class="project-title">The Safe Election Room Project</div>
                         <div class="project-description">
                             The project introduced an innovative voting system utilizing barcodes, sensors, and Arduino to ensure election integrity, which gained media recognition in Fortune 40 magazine as a potential solution for election security challenges. It was honored with the First Place Award at the International ROBORAVE Robotics Competition in May 2019, showcasing its effectiveness and ingenuity in creating a secure and fair voting environment. This accomplishment not only highlights technological innovation but also contributes to the ongoing discussion on improving electoral processes worldwide. CLICK TO READ MORE
@@ -346,13 +373,41 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close" onclick="closeModal('myModal4')">&times;</span>
-                            <h1>Project Title</h1>
-                            <p>Project description...</p>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h1>Election Room Project</h1>
+                                    <div class="modal-images">
+                                        <img src="img\secimodasi.png" alt="Image 1">
+                                        <img src="img\secim2.png" alt="Image 2">
+                                        <img src="img\secim3.png" alt="Image 3">
+                                    </div>
+                                    <p>This project is an election room project developed to help solve the problems or confusion experienced while voting in elections in our country and to ensure election security with digital measures. “How will ballot box and voting security be ensured in elections?” The issue is discussed before every election. The number of citizens going to vote is decreasing day by day due to alleged disruptions and fraudulent claims after the elections.</p>
+                                    <h2>Construction stages of the project</h2>
+                                    <h3>Saving Voter Information to the System</h3>
+                                    <p>The records of the voters who will vote in the election rooms are recorded in the system by the district election boards according to their TR ID numbers. Records are kept in Eprom.</p>
+                                    <h3>Card Entry to the Election Room</h3>
+                                    <p>All entrances will be kept under control with a card control system at the entrance of the election rooms. Voters will enter the election rooms by scanning their ID cards. The LED light on the access control system initially glows white to indicate that the system is operating. It says “READY” on the LCD screen.</p>
+                                    <h3>Entry Inside</h3>
+                                    <p>As the voter enters the door, an ultrasonic distance sensor controls the passage, and 5 seconds after the voter enters, the LED turns white again and "READY TO VOTE" appears on the screen. The system becomes active again.</p>
+                                    <h3>Voting</h3>
+                                    <p>5x8 cm ballot papers are used in every election. A serious waste of paper occurs when unused ballot papers are thrown away. In addition, the size of the ballot papers is much larger than the ballot papers in the system we developed. Therefore, serious damage is caused to the environment. This method aims to significantly reduce paper waste during elections.</p>
+                                    <h3>Envelope Control</h3>
+                                    <p>After the voting process takes place in the booth, the envelope is put into the weight control circuit. If the weight of the envelope is within the predetermined weight range, the envelope is considered valid. This control serves as a deterrent, thus preventing counterfeit paper printing and placing foreign objects in envelopes.</p>
+                                    <h3>Instant Automatic Vote Counting at the Ballot Box</h3>
+                                    <p>The votes cast in the ballot box will be counted with the help of an ultrasonic sensor and the number of votes cast will be displayed instantly on the LCD screen above the ballot box.</p>
+                                    <h3>Counting the Votes</h3>
+                                    <p>In the system I have set up, after the voting process is completed, the votes will be counted using the phone application, with the QR code reading system, and the counting results will be automatically sent to the election board via e-mail. To carry out this process, the ballot box chairman will use the phone application prepared by the district election board, which he will download to his phone.</p>
+                                    <h2>Technical description of the project</h2>
+                                    <p>Card Entry to the Election Room Two different Arduino circuits are connected wirelessly. The data read from the Arduino to which the card reader is connected will be sent to the other Arduino via RF24, and the TR ID number of the person entering the hall will be written on the hall president's screen.</p>
+                                    <h2>Originality</h2>
+                                    <p>The aim of this project is to establish secure election rooms using today's technologies and to improve and facilitate the election process. Thus, every citizen's right to vote will be protected, as in all democracies, through an election that is independent and impartial from parties.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Project 5 -->
                     <div class="project" onclick="openModal('myModal5')">
-                        <img src="geleceksizin.png" alt="The Future is Yours Book Project">
+                        <img src="img\geleceksizin.png" alt="The Future is Yours Book Project">
                         <div class="project-title">The Future is Yours Book Project</div>
                         <div class="project-description">
                             My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
@@ -364,13 +419,29 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close" onclick="closeModal('myModal5')">&times;</span>
-                            <h1>Project Title</h1>
-                            <p>Project description...</p>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h1>The Future is Yours</h1>
+                                    <div class="modal-images">
+                                        <img src="img\geleceksizin.png" alt="Image 1">
+                                        <img src="img\book2.png" alt="Image 2">
+                                        <img src="img\book3.png" alt="Image 3">
+                                    </div>
+                                    <p>
+                                        Me and my sister are 11th grade students. When we were in the 4th grade of primary school, we decided to make a donation for the first time and spent our New Year's allowance to buy gifts for sick children in the Department of Child Oncology at 9 Eylül University. We packed the gifts we bought and left them under the Christmas tree we set up in the hospital. We felt very good that day. That's when we learned that helping others not only makes them happy, but also it makes you happy, too. Later, we continued doing small favors the following years. When the new 9 Eylül University Children's Hospital was opened, we designed notice boards with animal figures and hung them on its walls. We sold second-hand clothes during summer holidays and provided stationery to the Kuşadası Handicapped Protection Association. <br /> <br />
+                                        This year we wanted to make a bigger and multi-purpose project. We decided to interview successful people and then publish a book. We planned to buy a medical device with a large part of the proceeds from the sale of this book. We selected 18 people and sent them an e-mail about our project via social media. Fazıl Say, Filiz Sarper, Erhan Erkut, Azra Kohen, Yılmaz Büyükerşen, Murat Özyeğin, Fahir Atakoğlu, Selçuk Şirin, Mehmet Öz, Nasuh Mahruki and Ufuk Tarhan stated that they will support the project. We sent them questions about their jobs and life experiences. <br /> <br />
+                                        In the meantime, we got in touch with the Head of Pediatric Hematology Department of 9 Eylül University (DEUTF), Prof. Dr. Hale Ören and learned what kind of help we could do. First of all, with the money collected, we decided to buy the device they needed for the children's emergency department. We then contacted EÇEV to start a sustainable project with the remaining money. We planned to buy tablets and chess sets for middle school students at EÇEV and give them online chess and coding lessons. Thus, we started to work to implement a project where high school students like us can get information and inspiration from people who are successful in their jobs, and that will benefit the society in terms of health and education. <br /> <br />
+                                        Our book arrived on the 2nd of March. We immediately opened the @geleceksizinolsun instagram account and started sharing on all our social media accounts. We are selling the books only from this account. İsmail Küçükkaya introduced our book in the "Çalar Saat" program. Fazıl Say, Azra Kohen and Erhan Erkut shared our book on their social media accounts. We sold about 600 books in a month. We are hoping to go to the second edition as soon as possible. <br /> <br />
+                                        We had a big dream and worked hard. We would like to thank everyone who believed in us, trusted us, and supported our project by answering our questions. <br /> <br />
+                                        If you want to contribute too, you can follow us on @geleceksinolsun on our instagram account.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Project 6 -->
                     <div class="project" onclick="openModal('myModal6')">
-                        <img src="websitePhoto.png" alt="Personal Website Project">
+                        <img src="img\websitePhoto.png" alt="Personal Website Project">
                         <div class="project-title">Personal Website Project</div>
                         <div class="project-description">
                             This project involves creating a personal website to showcase academic and project work, including a dynamic homepage featuring real-time interactive elements. It serves as a portfolio, highlighting skills in web development, design, and content organization. The website also includes a contact section, enhancing communication with potential collaborators or employers.
@@ -382,8 +453,16 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close" onclick="closeModal('myModal6')">&times;</span>
-                            <h1>Project Title</h1>
-                            <p>Project description...</p>
+                            <div class="modal-body">
+                                <div class="modal-description">
+                                    <h1>Personal Website</h1>
+                                    <p>
+                                        Creating a website is a journey that involves several stages, from conception to execution. This particular website was crafted as a comprehensive platform to reflect a personal and professional profile. The development process commenced with the design phase, using Adobe Illustrator to create a unique and appealing visual layout. The choice of a stylized map of Boston as a background lends a personal touch, signaling the developer's connection to the city. <br /> <br />
+                                        The technical construction of the site involved HTML, CSS, and JavaScript, which are the building blocks of web development. HTML laid the foundational structure, CSS was employed for styling and creating a visually engaging experience, and JavaScript added interactivity and dynamic elements. These technologies were carefully woven together to ensure a seamless user experience across various devices. <br /> <br />
+                                        Each step in the development process was taken with careful consideration of the end goal: to create a personal website that not only showcased the developer's technical skills but also conveyed their personal story and professional journey. The final product is a testament to the developer's dedication to learning and personal growth, embodying both their expertise in web development and their creative approach to design.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -394,15 +473,15 @@
                 <div id="contact">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <img src="locationIcon.png" alt="Location">
+                            <img src="img\locationIcon.png" alt="Location">
                             <div>Boston, MA</div>
                         </div>
                         <div class="contact-item">
-                            <img src="emailIcon.png" alt="Email">
+                            <img src="img\emailIcon.png" alt="Email">
                             <div>ekremarmagankarakas@gmail.com</div>
                         </div>
                         <div class="contact-item">
-                            <img src="phoneIcon.png" alt="Phone">
+                            <img src="img\phoneIcon.png" alt="Phone">
                             <div>857-971-0526</div>
                         </div>
                     </div>
@@ -429,7 +508,7 @@
     <script>
         function createBubble() {
             const heroSection = document.querySelector('.hero');
-            const skills = ["Python", "Java", "Racket", "C", "C++", "Go", "HTML", "CSS", "Arduino", "Raspberry-Pi", "Git", "Amazon Workspace", "WordPress", "Flutter", "Eclipse", "Jupyter Notebook", "RStudio", "IntelliJ", "Dr. Racket", "PyCharm", "Android Studio", "MariaDB", "MySQL", "HeidiSQL", "VMware", "VirtualBox", "WordPress", "Visual Studio Code"];
+            const skills = ["Python", "Java", "Racket", "C", "C++", "Go", "HTML", "CSS", "JavaScript", "Arduino", "Raspberry-Pi", "Git", "Amazon Workspace", "WordPress", "Flutter", "Eclipse", "Jupyter Notebook", "RStudio", "IntelliJ", "Dr. Racket", "PyCharm", "Android Studio", "MariaDB", "MySQL", "HeidiSQL", "VMware", "VirtualBox", "WordPress", "Visual Studio Code"];
             const skill = skills[Math.floor(Math.random() * skills.length)];
             const createElement = document.createElement('span');
             createElement.textContent = skill;
@@ -459,7 +538,7 @@
             sidebar.classList.toggle("active");
         }
     </script>
-    <img class="toggle-sidebar" src="toggle.png" alt="Toggle Sidebar" onclick="toggleSidebar()">
+    <img class="toggle-sidebar" src="img\toggle.png" alt="Toggle Sidebar" onclick="toggleSidebar()">
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -496,6 +575,26 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        const projects = document.querySelectorAll('.project');
+
+        const options = {
+            threshold: 0.5, // Detect when 50% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, options);
+
+        projects.forEach((project) => {
+            observer.observe(project);
+        });
     </script>
 </body>
 </html>
