@@ -1,510 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - Ekrem Armagan Karakas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Complete Responsive Personal Portfolio Website HTML CSS Javascript | Codehal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="container">
-        <nav class="sidebar" id="sidebar">
-            <div class="name">Ekrem Armagan Karakas</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Ekrem Armagan Karakas<span class="animate" style="--i:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
         </nav>
-        <div class="main-content">
-            <div class="hero" id="home">
-                <div class="hero-text">
-                    <p>👋 Hi there, I'm Ekrem Armagan Karakas and I am a</p>
-                    <h1>Computer Science student at <span class="highlight">Northeastern University</span></h1>
-                    <p>with a passion for applying technology to solve real-world problems. My academic and project work has focused on areas like cybersecurity, data science, and software development, and I've gained hands-on experience through internships in cloud technology and mobile software development. I'm particularly interested in leveraging my skills in Python, Java, and Flutter to create impactful software solutions. Outside of tech, I enjoy engaging in robotics projects, sports, and have a strong commitment to community service.</p>
+    </header>
+
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-bubble">
+            <div class="home-content">
+                <div class="home-text">
+                    <h3>👋 Hi there, I'm Ekrem Armagan Karakas and I am a<span class="animate" style="--i:2;"></span></h3>
+                    <div class="text-animate">
+                        <h3>Computer Science</h3>
+                        <span class="animate" style="--i:3;"></span>
+                    </div>
+                    <h2>Student at Northeastern University <span class="animate" style="--i:2;"></span></h2>
+                    <p>
+                        with a passion for applying technology to solve real-world problems. My academic and project work has focused on areas like cybersecurity, data science, and software development, and I've gained hands-on experience through internships in cloud technology and mobile software development. I'm particularly interested in leveraging my skills in Python, Java, and Flutter to create impactful software solutions. Outside of tech, I enjoy engaging in robotics projects, sports, and have a strong commitment to community service.
+                        <span class="animate" style="--i:4;"></span>
+                    </p>
+
                     <div class="social-icons">
                         <a href="cv.html" target="_blank"><img src="img\resumeIcon.png" alt="resume" title="resume"></a>
                         <a href="https://github.com/ekremarmagankarakas" target="_blank"><img src="img\githubIcon.png" alt="github" title="github"></a>
                         <a href="https://linkedin.com/in/ekrem-armagan-karakas"><img src="img\linkedlnIcon.png" alt="linkedln" title="linkedln"></a>
+                        <span class="animate" style="--i:5;"></span>
                     </div>
                 </div>
                 <div class="hero-image">
                     <img src="img\ProfilePicturePNG.png" alt="Ekrem Armagan Karakas">
+                    <span class="animate" style="--i:1;"></span>
                 </div>
-            </div>
-            <div class="separator"></div>
-            <div id="projects">
-                <h1 class="projects-header">My <span class="highlight">Projects</span></h1>
-                <p class="projects-description">Here is a showcase of my work ranging from academic endeavors to personal passions. Each project reflects my commitment to innovation, learning, and excellence in computer science.</p>                <div class="projects-container">
-                    <!-- Project 1 -->
-                    <div class="project" onclick="openModal('myModal1')">
-                        <img src="img\soccer.jpg" alt="UK Soccer Player Valuation Analysis">
-                        <div class="project-title">UK Soccer Player Valuation Analysis</div>
-                        <div class="project-description">
-                            The project involved creating a statistical model to estimate UK soccer players' transfer values, offering an impartial assessment tool for the transfer market. It analyzed players' performance metrics and other factors to identify cost-effective and strategic profiles for soccer team management. The primary aim was to link players' on-pitch performance with their market value, enhancing resource allocation decisions in club management. CLICK TO READ MORE
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal1" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal1')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>UK Soccer Player Valuation Analysis</h1>
-                                    <h2>Abstract</h2>
-                                    <p>
-                                        The Premier League is the most popular soccer league in the world, drawing global fans with various team affiliations. The pressure to
-                                        constantly have the best quality of soccer leads teams to constantly be on the lookout for the best players they can find, which leads to a
-                                        unique global “transfer market”where teams buy and sell players to fill out their rosters. Naturally, this creates an atmosphere where
-                                        each professional soccer player has a value associated with them, known as their transfer value, which is supposed to represent the cost
-                                        that a club would have to pay to buy him. The larger teams will often spend tens of millions of dollars to buy players from smaller teams
-                                        and they will generate the most fans and the biggest wins. The question is, how much do player’s values represent their ability? This
-                                        project thus aims to create a model that is able to predict the transfer value of soccer players based on their available statistics, leaving
-                                        the league with a tool thats able to, without bias, evaluate players against each other and allowing players to value themselves against
-                                        other players with similar statistics and characteristics.
-                                    </p>
-                                    <h2>Introduction</h2>
-                                    <h3>Problem Definition</h3>
-                                    <p>
-                                        The core problem this project addresses revolves around the correlation between a soccer player's
-                                        transfer value and their actual performance, specifically in the context of the English Premier League.
-                                        Despite being a central aspect of the global soccer economy, the transfer market's valuation of players
-                                        often raises questions about its accuracy and efficacy. The problem lies in determining how well these
-                                        values reflect a player's true ability to contribute to a team's success. Larger clubs frequently invest
-                                        substantial sums in acquiring players, yet it's unclear if these expenditures translate into
-                                        commensurate improvements in club performance, such as more wins or better league standings.
-                                        Additionally, the project seeks to identify the types of players who tend to exceed or fall short of the
-                                        expectations set by their transfer values. This includes examining if there is a consistent pattern in the
-                                        types of players who overperform or underperform based on criteria like age, position, or nationality.
-                                        By addressing these issues, the study aims to provide a more nuanced understanding of player
-                                        valuation in the transfer market, offering valuable insights for club management strategies and the
-                                        broader soccer community.
-                                    </p>
-                                    <h3>Motivations</h3>
-                                    <p>
-                                        The motivation for this project stems from a desire to deeply understand the intricacies of the Premier
-                                        League's transfer market, a key element in maintaining the high quality of play that has made it the
-                                        most popular soccer league in the world. This market assigns monetary values to players, a practice
-                                        that raises questions about the true representation of a player's ability and contribution to team
-                                        success. The study aims to explore whether these transfer values genuinely reflect player
-                                        performance and, by extension, whether the substantial investments made by clubs in acquiring
-                                        players are justified. A significant part of this motivation is also to provide insights that could enhance
-                                        the strategic planning of clubs in their transfer activities, ensuring more effective allocation of
-                                        resources for better team performance. Furthermore, while the focus is on the Premier League, the
-                                        findings are anticipated to have broader implications, potentially informing strategies in other soccer
-                                        leagues worldwide. This project, therefore, bridges the gap between the numerical values in the
-                                        transfer market and actual on-field performance, offering a comprehensive understanding of the
-                                        economics of soccer and its influence on the game’s competitive balance and quality.
-                                    </p>
-                                    <h3>Objectives</h3>
-                                    <p>
-                                        This project aims to investigate the correlation between a soccer player's market value and their
-                                        performance, particularly in the English Premier League. It focuses on analyzing various factors
-                                        including club values, player costs, and actual performance outcomes such as league standings,
-                                        goals scored and conceded, and possession statistics. The objective is to evaluate the cost
-                                        effectiveness of player transfers and determine their financial return. Additionally, the project
-                                        seeks to identify player profiles that deliver high impact at relatively low costs, aiding in strategic
-                                        decision-making for team management. This involves detailed statistical analysis, demographic
-                                        investigation, and advanced data processing techniques, including OneHotEncoding and data
-                                        integration, to create a comprehensive dataset for in-depth analysis. By uncovering the most
-                                        impactful metrics in the prediction of a players transfer value, soccer players and club
-                                        management alike could analyze cost-effectiveness and develop player profiles that have more
-                                        inherent worth in the UK soccer community.
-                                    </p>
-                                    <h2>Methodology</h2>
-                                    <h3>Data Acquisition</h3>
-                                    <p>
-                                        Data Acquisition
-                                        We gathered our data through TransferMarkt as well as Kaggle. We condensed these datasets into one major dataset for
-                                        ease of analysis, we made sure to pull historical player valuation data so we could compare the trends in existing player
-                                        evaluations with our model. <br /> <br />
-                                        Top 5 Soccer leages | Kaggle
-                                        player performance information from the 2022-2023 season <br /> <br />
-                                        Football data from TransferMarkt
-                                        information on competitions, games, clubs, players
-                                        and appearances that is automatically updated once a week
-                                    </p>
-                                    <h3>Data Cleaning and Manipulation</h3>
-                                    <p>
-                                        In our data analysis project, we began by loading datasets on players' profiles, valuations, and match appearances using pandas. We
-                                        first filtered out entries with missing 'position' and 'agent_name' from the players' dataset to ensure data quality. Next, we employed
-                                        a OneHotEncoder to numerically transform key categorical variables like competition IDs, positions, agent names, foot preference,
-                                        and nationalities. This transformation was crucial to handle categorical data effectively. The encoded data, with newly generated
-                                        column names, was then integrated back into the players' dataset after removing the original categorical columns. We streamlined
-                                        the dataset by discarding less relevant columns like 'city_of_birth' and 'image_url', focusing on more impactful attributes. From the
-                                        appearances dataset, we aggregated vital performance metrics such as goals, assists, and cards by player ID, providing a cumulative
-                                        view of each player's on-field contributions. These enriched player profiles were then merged with the performance statistics.
-                                        Additionally, we transformed 'date_of_birth' into an 'age' feature for more insightful analysis. After dropping NaN values, we
-                                        obtained a final dataset that combines detailed player characteristics, performance data, and market values, offering a rich
-                                        foundation for subsequent analytical exploration.
-                                        Expanding on this comprehensive data preparation, we then meticulously structured our predictive model's feature set. Utilizing the
-                                        one-hot encoded columns for country, club, foot, position, and agent data, alongside core performance metrics like yellow cards,
-                                        goals, assists, and minutes played, we assembled a robust array of variables. This multi-faceted feature set was split into training
-                                        and testing datasets, reserving 20% for testing, to robustly model and predict players' highest market values, leveraging the
-                                        nuanced relationships within the data. Additionally in order to better analyze which features had the largest impact on our models we
-                                        created visualizations which we could use to retroactively tweak the model to improve the r2 score (as shown below).  Concluding
-                                        our Exploratory Data Analysis [EDA] as well as the steps we took to feature encode.
-                                    </p>
-                                    <h2>Model Considerations</h2>
-                                    <p>
-                                        KNN Regression Model:
-                                        Utilizing K-Nearest Neighbors (KNN) regression in
-                                        analyzing Premier League data offers simplicity and
-                                        interpretability, which are significant advantages.
-                                        However, its suitability is questionable for our project
-                                        due to its limitations in handling noisy data and
-                                        computational inefficiency with large datasets. Given
-                                        our project's emphasis on managing large and complex
-                                        datasets, these drawbacks render KNN less ideal. While
-                                        its straightforward approach could offer clear insights,
-                                        these technical constraints suggest the need for a more
-                                        robust method in our context.<br /> <br />
-                                        SVM Regression Model:
-                                        In our project, using Support Vector Machine (SVM)
-                                        regression models comes with its pros and cons.
-                                        While SVMs are great for handling complex, high
-                                        dimensional data (which we have plenty of), they're
-                                        versatile thanks to the kernel trick. But here's the
-                                        issue: they're not the best with big datasets and can
-                                        get tripped up by noisy data. Considering how
-                                        soccer player valuations vary a lot and SVM relies on
-                                        closeness to data points, it might not be the most
-                                        efficient choice for our analysis.<br /> <br />
-                                        Random Tree Model Regression:
-                                        The Random Forest regression model is particularly
-                                        effective for our project because it handles non-linear
-                                        data well, which is crucial given the complexity of soccer
-                                        player valuations. It's also strong against overfitting,
-                                        ensuring more reliable predictions. The downside is its
-                                        complexity and high computational demands, particularly
-                                        with large datasets, and it's not as straightforward to
-                                        interpret. Overall, its ability to manage diverse data
-                                        types and resist overfitting makes it a viable option for
-                                        our analysis.
-                                    </p>
-                                    <h2>Result and Analysis</h2>
-                                    <h3>Relative Success with Random Tree Regresor Model</h3>
-                                    <p>
-                                        After extensive analysis of various models, we identified the Random Forest Regressor as the most effective in predicting player
-                                        transfer values. Notably, the model with 140 estimators yielded the best results, with a Mean Squared Error (MSE) of
-                                        34,748,586,321,505.96 and an R² Score of 0.746. While this performance surpasses other models, it still doesn't reach an ideal level
-                                        of prediction accuracy for such a complex and dynamic market. The challenges in accurately modeling player transfer values are
-                                        multifaceted. Firstly, the player transfer market is highly complex, with a multitude of influencing factors like performance statistics,
-                                        age, position, market trends, and club dynamics. These variables are interwoven and subject to frequent changes. Our model
-                                        incorporates these statistics, but the subjective nature of player evaluations often weakens the predictability of transfer values. In real
-                                        world scenarios, player valuation heavily relies on subjective assessments from scouts, managers, and experts, who look beyond mere
-                                        statistics to make judgment calls. This introduces a level of unpredictability and variability that our model can't fully capture. Moreover,
-                                        the transfer market is influenced by external factors such as economic conditions, global events, and club-specific strategies, which
-                                        can significantly alter player valuations. These dynamic market conditions create a range of values that can fluctuate widely based on
-                                        current events or market shifts. Additionally, the relationships between input features and transfer values are likely non-linear and
-                                        constantly evolving, adding another layer of complexity to our modeling efforts. Despite these challenges, our model offers a significant
-                                        step forward in understanding and predicting player transfer values,  though it falls short of fully capturing the intricate dynamics of
-                                        the football transfer market. With the assistance of intentional and comprehensive feature encoding, as well as hyper-parameter
-                                        turning we were able to create a model with an r2 of .746 and a mse of roughly 5.8 million. Given that the valuation of soccer players
-                                        in our data set ranged from less than 1 million to over 500 million dollars, we believe this to be an objective success. And if use in
-                                        tandem with expert advice could provide some interesting insight for the presidents of soccer clubs.
-                                    </p>
-                                    <h3>Comparison with similar existing models</h3>
-                                    <p>
-                                        The development of models to predict transfer or market values of soccer players is a challenging task, and existing similar models in the
-                                        field of soccer/futbol struggle to achieve consistently high r2 scores. A key reason for this difficulty is the impact of external factors,
-                                        particularly the popularity or notoriety of players on social media platforms like Reddit and Twitter. Studies by Li, Kampakis, Treleaven,
-                                        Fazenda, Costa, Garcia-Mas, and Carvalho (2022) highlight the significant role that the presence of a player's name in online discussions
-                                        plays in influencing these models. The popularity of players in such threads can skew the data, making it difficult to accurately predict their
-                                        market value based solely on performance or statistical data. Li states in his conclusion that a key way his model could be improved is
-                                        through the includion of popularity metrics, stating “When selecting the features and getting the data, this research fails to get the data
-                                        expressing the popularity of players (e.g., Wikipedia page views, Reddit posts). Therefore, to make the research more comprehensive, the
-                                        popularity data of players need to be obtained” (Li, et al, 2022). Moreover McHale, while stating that Twitter followers wasn't a statistically
-                                        significant feature in his own model, admits that in similar models it has been an effective means to increase r2 scores and the subsequent
-                                        reliability of the model (McHale, et al, 2022) This highlights the complexity and the multifaceted nature of valuing soccer players, where
-                                        online presence and public perception can significantly impact model outcomes. In summary, in comparison with other models in the field of
-                                        soccer analytics, our model has room to improve but also performs comparatively well.
-                                    </p>
-                                    <h3>Ways to Improve</h3>
-                                    <p>
-                                        To enhance our model's accuracy in predicting player transfer values, several improvements can be
-                                        implemented. First, incorporating more granular and diverse data points, such as detailed player
-                                        performance metrics over multiple seasons, psychological assessments, and injury history, could
-                                        provide a more holistic view of a player's value. Additionally, integrating external factors like market
-                                        trends, economic conditions, and club financial health could capture the dynamic nature of the transfer
-                                        market more effectively. Implementing advanced machine learning techniques like ensemble methods
-                                        or deep learning could also help capture complex, non-linear relationships within the data. Regularly
-                                        updating the model with recent data and trends will ensure its relevance over time. Additionally,
-                                        collaboration with football experts to include subjective assessments and tacit knowledge in the model
-                                        could bridge the gap between statistical analysis and real-world evaluations, potentially leading to more
-                                        accurate predictions. Including qualitative (turned quantitative) could thus be invaluable. In the future
-                                        as we continue to work on this model, we believe that the incorporation of these factors could lead to a
-                                        tool accurate enough (in this context accuracy is a higher r2 score) to be used in a professional
-                                        environment.
-                                    </p>
-                                    <h2>The Impact</h2>
-                                    <p>
-                                        We acknowledge that our model is far from perfect; however, we firmly believe that a model of its kind, or even an
-                                        enhanced version of the same model with more extensive and diverse data, has the potential to have a profound impact on
-                                        the global soccer community. This impact extends beyond the world of soccer fans and enthusiasts and can influence
-                                        society as a whole. With the creation of a predictive model for player transfer valuations in the dynamic transfer market,
-                                        we open the door to several opportunities. Our model can address subtle biases in player valuation, ensure fair
-                                        recognition of talent from regions like the global south, analyze the factors contributing to player desirability, promote
-                                        data-driven discussions in mainstream media, and foster inclusivity and diversity within the sport. Since a large amount of
-                                        recruiting is done overseas in countries like Senegal, India, Ghana and Nigeria, a tool that allows players to know their
-                                        worth comparatively could lead to a more equitable and fair compensation system. With the model itself serving as way to
-                                        increase pay transparency in the field. If this model additionally were adapted to include more statistics about women, it
-                                        could be a tool used in the conversation about the gender pay gap in athletics. And finally it could lead to a more
-                                        interesting game! Through the creation of a tool that can conversely be used by the presidents of clubs to put together a
-                                        team of (cost-effective) high performing players the sport itself would inevitably have more interesting matches, like the
-                                        World Cup coming up.  Ultimately, by continuing to refine and expand upon this model, we can contribute to a more
-                                        equitable and data-driven approach to player valuation, benefiting fans, players, and clubs while enhancing the overall
-                                        soccer community.
-                                    </p>
-                                    <h2>Conlusion</h2>
-                                    <p>
-                                        We set out to create a robust model for predicting soccer player transfer valuations, intending to accurately correlate
-                                        player performance with their market value. And we did just that. Utilizing a Random Forest Regressor with 140
-                                        estimators, achieving an R² score of 0.746, our journey has been enlightening, challenging and relatively successful.
-                                        Our final and most recent iteration of the model not only marks significant advancement from previous versions, but it
-                                        also underscores the inherent complexities in player valuation. Our objective was to create a model that is able to
-                                        predict the transfer value of soccer players based on their available statistics, leaving the league with a tool thats able
-                                        to, without bias, evaluate players against each other and allowing players to value themselves against other players
-                                        with similar statistics and characteristics, while also identifying emerging trends. Through the creation of a model with
-                                        an r2 we have begun to do just that, with room for improvement on this iteration. Despite hurdles, our model shows
-                                        potential in positively influencing the soccer world. It's not just about technical prowess; our ambition is to leverage
-                                        data science for fostering a more inclusive, equitable, and analytically informed soccer community. As we look ahead,
-                                        our commitment is steadfast in refining our approach, enriching our dataset with more diverse variables, and
-                                        continuing collaborative efforts to push the frontiers of data science in soccer (and athletics in general), ultimately
-                                        making a meaningful contribution to the sport's analytical landscape.
-                                    </p>
-                                    <h2>Bibliography</h2>
-                                    <p>
-                                        [1] Tatiana Fazenda, Aldo M. Costa, Alexandre Garcia-Mas & Pedro G. Carvalho (2022) How media influence is perceived by
-                                        professional soccer players: a qualitative case study in Portugal, Sport in Society, 25:12, 2541-2552,DOI:
-                                        10.1080/17430437.2021.1944115 <br />
-                                        [2] McHale, Ian G., and Benjamin Holmes. “Estimating Transfer Fees of Professional Footballers Using Advanced Performance
-                                        Metrics and Machine Learning.” European Journal of Operational Research, vol. 306, no. 1, 20 June 2022, <br />
-                                        [3]“Top 5 Soccer Leagues.” Kaggle.com, www.kaggle.com/code/thabomahlaha/top-5-soccer-leagues. Accessed 3 Dec. 2023.
-                                        www.kaggle.com. (2023).<br />
-                                        [4] Football Data from Transfermarkt. [online] <br />
-                                        [5]Li, C., Kampakis, S. and Treleaven, P. (n.d.). Machine Learning Modeling to Evaluate the Value of Football Players. [online]
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project" onclick="openModal('myModal2')">
-                        <img src="img\reversi.png" alt="Reversi Game Development">
-                        <div class="project-title">Reversi Game Development</div>
-                        <div class="project-description">
-                            The project involved developing a Reversi game using Java, featuring a hexagonal grid, adaptable to various sizes and adhering to the standard rules for two players. It was built on a model-view-controller architecture, with the model handling the game's state, rules, and interactions, while the view provided textual output, designed with potential for future graphical upgrades. This endeavor showcases advanced Java application in algorithm creation, game development, AI strategies, and comprehensive unit testing. CLICK TO READ MORE
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal2" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal2')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>Reversi Game</h1>
-                                    <div class="modal-images">
-                                        <img src="img\reversi.png" alt="Image 1">
-                                        <img src="img\reversi2.png" alt="Image 2">
-                                        <img src="img\reversi3.png" alt="Image 3">
-                                    </div>
-                                    <p>
-                                        Developing the Reversi game project involved meticulous planning and execution. Initially, the game's fundamental design was conceptualized, ensuring it adhered to standard Reversi rules but on a hexagonal grid, allowing for a unique gameplay experience. Key components such as the game board, state, and rules were established within the model, with the view handling simple textual output and the controller to be developed for managing inputs and system control flow. <br /> <br />
-                                        Subcomponents including player representation, game state, and grid coordinates were defined to facilitate game mechanics. The development process also included the integration of new classes and interfaces, enhancing functionality and user interaction. Mock models were introduced for testing purposes, ensuring robustness in grid coordinate handling and move validation. <br /> <br />
-                                        For user interaction, clickable cells and keyboard shortcuts were implemented, allowing players to select or deselect cells, place discs, or pass their turn. To improve the game logic, new methods were added to the model interface, and existing logic was refined to prevent illegal moves and provide a smoother gameplay experience. <br /> <br />
-                                        Subsequent updates focused on eliminating nulls in favor of optionals and lists, streamlining communication between the model and controllers through a callback interface, and introducing a broadcaster interface for model updates. The game state management was enhanced to handle game start and end conditions more effectively. <br /> <br />
-                                        The view underwent significant changes, with new methods added to the interface for improved user feedback and interaction, and the panel adapted to accommodate action listeners for mouse and keyboard events. The player component was refined to differentiate between human and AI players, with the latter using strategic algorithms to determine moves. <br /> <br />
-                                        Throughout the project, extensive testing and iterations were conducted to ensure the accuracy of game mechanics and the quality of user experience. The implementation demonstrated a commitment to creating a functional and engaging rendition of the Reversi game, showcasing the developers' skills in Java programming and software design.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 3 -->
-                    <div class="project" onclick="openModal('myModal3')">
-                        <img src="img\karakaslargroup.png" alt="Karakaslar Group Application">
-                        <div class="project-title">Karakaslar Group Application</div>
-                        <div class="project-description">
-                            The founder of "Karakaşlar Group" requested an application to streamline the approval of worker requests, leading to the creation of a system with three types of accounts: manager, employee, and accountant. Employees can submit entries for necessary items, which managers can approve or decline, while accountants monitor all entries without approval rights. The application features secure login, personalized entry visibility, categorization, and historical data analysis. CLICK TO READ MORE
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal3" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal3')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>KarakaslarGroup App</h1>
-                                    <div class="modal-images">
-                                        <img src="img\kg1.png" alt="Image 1">
-                                        <img src="img\kg2.png" alt="Image 2">
-                                        <img src="img\kg3.png" alt="Image 3">
-                                    </div>
-                                    <p>
-                                        My client is the founder of the construction company called “Karakaşlar Group.” My client builds shopping malls and manages some of them. He told me that he had a hard time managing the requirements and expenses, therefore, he asked me to write an application that would allow him to approve and decline entries from workers.
-                                        There are 3 types of accounts. The manager account, employee account and accountant account. From create account page, the user can create their account. They will have to choose which type of account they want to create, then from this page, they will enter a username, a password and the specific password for the account they want to create.  If this specific password is wrong, the account wouldn’t be created and an error message would pop up informing the user that the password is incorrect. This specific password would prevent workers or accountants from creating a managers account. Once the account is created, they would be able to login with their username and password. If the user enters a non-existent username or password, or the username and password does not match, they won’t be able to login and a message would pop up informing that the username or password is incorrect. <br /> <br />
-                                        Let’s enter to an employee’s account first. This is the main page that the employee sees when they login. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. It is important that they only see the entries they did, they cannot see the entries that another employee enters. They would also be able to search for specific words from the entries they have made. The employee can also make new entries. In order to do so, they would have to click the new entry button on the top right corner. The username data is carried on this page. The user enters the item they request, the price of the item and the explanation for why they need that item and press enter in order to make the request. The request is added to the database with the username and the date at which the entry was made. The new entry is added into the previous entries on the home page of the employee account. <br /> <br />
-                                        Now let’s look at a manager’s account. The first page that comes up is the home page. The manager would be able to see all the awaiting entries made by the employees. They would be able to approve or decline the entries. The manager would be able to see the whole history of entries from the history page. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. In addition to the employees account, the manager would be able to see the total price for each category and in total. Also the manager would be able to see all the entries entered daily, monthly and yearly. Furthermore, the manager would be able to search for specific words in the entries and the data would be updated accordingly. <br /> <br />
-                                        The last one is the accountant account. The accountant account is very similar to the manager account, with the only difference being that accountants cannot approve or decline offers, they can only monitor the whole entries entered by every worker. <br /> <br />
-                                        There are also some improvements that could be made. Firstly, entry categories could be made in order for the entries to be more neatly organised. Secondly, a calendar page could be added to the manager’s account and the accountant’s account. This would help them see every entry day by day visually. Furthermore, the history page could have been written to a pdf in order for it to be printed with ease or secured in the accountancy. Lastly, a mobile application could also be made in order for the users to be able to access the database without the need of a computer
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 4 -->
-                    <div class="project" onclick="openModal('myModal4')">
-                        <img src="img\secimodasi.png" alt="The Safe Election Room Project">
-                        <div class="project-title">The Safe Election Room Project</div>
-                        <div class="project-description">
-                            The project introduced an innovative voting system utilizing barcodes, sensors, and Arduino to ensure election integrity, which gained media recognition in Fortune 40 magazine as a potential solution for election security challenges. It was honored with the First Place Award at the International ROBORAVE Robotics Competition in May 2019, showcasing its effectiveness and ingenuity in creating a secure and fair voting environment. This accomplishment not only highlights technological innovation but also contributes to the ongoing discussion on improving electoral processes worldwide. CLICK TO READ MORE
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal4" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal4')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>Election Room Project</h1>
-                                    <div class="modal-images">
-                                        <img src="img\secimodasi.png" alt="Image 1">
-                                        <img src="img\secim2.png" alt="Image 2">
-                                        <img src="img\secim3.png" alt="Image 3">
-                                    </div>
-                                    <p>This project is an election room project developed to help solve the problems or confusion experienced while voting in elections in our country and to ensure election security with digital measures. “How will ballot box and voting security be ensured in elections?” The issue is discussed before every election. The number of citizens going to vote is decreasing day by day due to alleged disruptions and fraudulent claims after the elections.</p>
-                                    <h2>Construction stages of the project</h2>
-                                    <h3>Saving Voter Information to the System</h3>
-                                    <p>The records of the voters who will vote in the election rooms are recorded in the system by the district election boards according to their TR ID numbers. Records are kept in Eprom.</p>
-                                    <h3>Card Entry to the Election Room</h3>
-                                    <p>All entrances will be kept under control with a card control system at the entrance of the election rooms. Voters will enter the election rooms by scanning their ID cards. The LED light on the access control system initially glows white to indicate that the system is operating. It says “READY” on the LCD screen.</p>
-                                    <h3>Entry Inside</h3>
-                                    <p>As the voter enters the door, an ultrasonic distance sensor controls the passage, and 5 seconds after the voter enters, the LED turns white again and "READY TO VOTE" appears on the screen. The system becomes active again.</p>
-                                    <h3>Voting</h3>
-                                    <p>5x8 cm ballot papers are used in every election. A serious waste of paper occurs when unused ballot papers are thrown away. In addition, the size of the ballot papers is much larger than the ballot papers in the system we developed. Therefore, serious damage is caused to the environment. This method aims to significantly reduce paper waste during elections.</p>
-                                    <h3>Envelope Control</h3>
-                                    <p>After the voting process takes place in the booth, the envelope is put into the weight control circuit. If the weight of the envelope is within the predetermined weight range, the envelope is considered valid. This control serves as a deterrent, thus preventing counterfeit paper printing and placing foreign objects in envelopes.</p>
-                                    <h3>Instant Automatic Vote Counting at the Ballot Box</h3>
-                                    <p>The votes cast in the ballot box will be counted with the help of an ultrasonic sensor and the number of votes cast will be displayed instantly on the LCD screen above the ballot box.</p>
-                                    <h3>Counting the Votes</h3>
-                                    <p>In the system I have set up, after the voting process is completed, the votes will be counted using the phone application, with the QR code reading system, and the counting results will be automatically sent to the election board via e-mail. To carry out this process, the ballot box chairman will use the phone application prepared by the district election board, which he will download to his phone.</p>
-                                    <h2>Technical description of the project</h2>
-                                    <p>Card Entry to the Election Room Two different Arduino circuits are connected wirelessly. The data read from the Arduino to which the card reader is connected will be sent to the other Arduino via RF24, and the TR ID number of the person entering the hall will be written on the hall president's screen.</p>
-                                    <h2>Originality</h2>
-                                    <p>The aim of this project is to establish secure election rooms using today's technologies and to improve and facilitate the election process. Thus, every citizen's right to vote will be protected, as in all democracies, through an election that is independent and impartial from parties.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 5 -->
-                    <div class="project" onclick="openModal('myModal5')">
-                        <img src="img\geleceksizin.png" alt="The Future is Yours Book Project">
-                        <div class="project-title">The Future is Yours Book Project</div>
-                        <div class="project-description">
-                            My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
-                        </div>`
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal5" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal5')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>The Future is Yours</h1>
-                                    <div class="modal-images">
-                                        <img src="img\geleceksizin.png" alt="Image 1">
-                                        <img src="img\book2.png" alt="Image 2">
-                                        <img src="img\book3.png" alt="Image 3">
-                                    </div>
-                                    <p>
-                                        Me and my sister are 11th grade students. When we were in the 4th grade of primary school, we decided to make a donation for the first time and spent our New Year's allowance to buy gifts for sick children in the Department of Child Oncology at 9 Eylül University. We packed the gifts we bought and left them under the Christmas tree we set up in the hospital. We felt very good that day. That's when we learned that helping others not only makes them happy, but also it makes you happy, too. Later, we continued doing small favors the following years. When the new 9 Eylül University Children's Hospital was opened, we designed notice boards with animal figures and hung them on its walls. We sold second-hand clothes during summer holidays and provided stationery to the Kuşadası Handicapped Protection Association. <br /> <br />
-                                        This year we wanted to make a bigger and multi-purpose project. We decided to interview successful people and then publish a book. We planned to buy a medical device with a large part of the proceeds from the sale of this book. We selected 18 people and sent them an e-mail about our project via social media. Fazıl Say, Filiz Sarper, Erhan Erkut, Azra Kohen, Yılmaz Büyükerşen, Murat Özyeğin, Fahir Atakoğlu, Selçuk Şirin, Mehmet Öz, Nasuh Mahruki and Ufuk Tarhan stated that they will support the project. We sent them questions about their jobs and life experiences. <br /> <br />
-                                        In the meantime, we got in touch with the Head of Pediatric Hematology Department of 9 Eylül University (DEUTF), Prof. Dr. Hale Ören and learned what kind of help we could do. First of all, with the money collected, we decided to buy the device they needed for the children's emergency department. We then contacted EÇEV to start a sustainable project with the remaining money. We planned to buy tablets and chess sets for middle school students at EÇEV and give them online chess and coding lessons. Thus, we started to work to implement a project where high school students like us can get information and inspiration from people who are successful in their jobs, and that will benefit the society in terms of health and education. <br /> <br />
-                                        Our book arrived on the 2nd of March. We immediately opened the @geleceksizinolsun instagram account and started sharing on all our social media accounts. We are selling the books only from this account. İsmail Küçükkaya introduced our book in the "Çalar Saat" program. Fazıl Say, Azra Kohen and Erhan Erkut shared our book on their social media accounts. We sold about 600 books in a month. We are hoping to go to the second edition as soon as possible. <br /> <br />
-                                        We had a big dream and worked hard. We would like to thank everyone who believed in us, trusted us, and supported our project by answering our questions. <br /> <br />
-                                        If you want to contribute too, you can follow us on @geleceksinolsun on our instagram account.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 6 -->
-                    <div class="project" onclick="openModal('myModal6')">
-                        <img src="img\websitePhoto.png" alt="Personal Website Project">
-                        <div class="project-title">Personal Website Project</div>
-                        <div class="project-description">
-                            This project involves creating a personal website to showcase academic and project work, including a dynamic homepage featuring real-time interactive elements. It serves as a portfolio, highlighting skills in web development, design, and content organization. The website also includes a contact section, enhancing communication with potential collaborators or employers.
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal6" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('myModal6')">&times;</span>
-                            <div class="modal-body">
-                                <div class="modal-description">
-                                    <h1>Personal Website</h1>
-                                    <p>
-                                        Creating a website is a journey that involves several stages, from conception to execution. This particular website was crafted as a comprehensive platform to reflect a personal and professional profile. The development process commenced with the design phase, using Adobe Illustrator to create a unique and appealing visual layout. The choice of a stylized map of Boston as a background lends a personal touch, signaling the developer's connection to the city. <br /> <br />
-                                        The technical construction of the site involved HTML, CSS, and JavaScript, which are the building blocks of web development. HTML laid the foundational structure, CSS was employed for styling and creating a visually engaging experience, and JavaScript added interactivity and dynamic elements. These technologies were carefully woven together to ensure a seamless user experience across various devices. <br /> <br />
-                                        Each step in the development process was taken with careful consideration of the end goal: to create a personal website that not only showcased the developer's technical skills but also conveyed their personal story and professional journey. The final product is a testament to the developer's dedication to learning and personal growth, embodying both their expertise in web development and their creative approach to design.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="contact">
-                <h1>Contact Me</h1>
-                <p>If you have any questions, proposals, or just want to say hello, feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-                <div id="contact">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <img src="img\locationIcon.png" alt="Location">
-                            <div>Boston, MA</div>
-                        </div>
-                        <div class="contact-item">
-                            <img src="img\emailIcon.png" alt="Email">
-                            <div>ekremarmagankarakas@gmail.com</div>
-                        </div>
-                        <div class="contact-item">
-                            <img src="img\phoneIcon.png" alt="Phone">
-                            <div>857-971-0526</div>
-                        </div>
-                    </div>
-                </div>
-                <form action="mailto:ekremarmagankarakas@gmail.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </div>
-    </div>
-    <img class="toggle-sidebar" src="img\toggle.png" alt="Toggle Sidebar" onclick="toggleSidebar()">
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-intro">
+            <h2 class="projectsHeader">
+                My <span class="highlight">Projects</span>
+            </h2>
+        </div>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project" onclick="openModal('myModal1')">
+                <img src="img\soccer.jpg" alt="UK Soccer Player Valuation Analysis">
+                <div class="project-title">UK Soccer Player Valuation Analysis</div>
+                <div class="project-description">
+                    The project involved creating a statistical model to estimate UK soccer players' transfer values, offering an impartial assessment tool for the transfer market. It analyzed players' performance metrics and other factors to identify cost-effective and strategic profiles for soccer team management. The primary aim was to link players' on-pitch performance with their market value, enhancing resource allocation decisions in club management. CLICK TO READ MORE
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>UK Soccer Player Valuation Analysis</h1> <h2>Abstract</h2> <p> The Premier League is the most popular soccer league in the world, drawing global fans with various team affiliations. The pressure to constantly have the best quality of soccer leads teams to constantly be on the lookout for the best players they can find, which leads to a unique global “transfer market”where teams buy and sell players to fill out their rosters. Naturally, this creates an atmosphere where each professional soccer player has a value associated with them, known as their transfer value, which is supposed to represent the cost that a club would have to pay to buy him. The larger teams will often spend tens of millions of dollars to buy players from smaller teams and they will generate the most fans and the biggest wins. The question is, how much do player’s values represent their ability? This project thus aims to create a model that is able to predict the transfer value of soccer players based on their available statistics, leaving the league with a tool thats able to, without bias, evaluate players against each other and allowing players to value themselves against other players with similar statistics and characteristics. </p> <h2>Introduction</h2> <h3>Problem Definition</h3> <p> The core problem this project addresses revolves around the correlation between a soccer player's transfer value and their actual performance, specifically in the context of the English Premier League. Despite being a central aspect of the global soccer economy, the transfer market's valuation of players often raises questions about its accuracy and efficacy. The problem lies in determining how well these values reflect a player's true ability to contribute to a team's success. Larger clubs frequently invest substantial sums in acquiring players, yet it's unclear if these expenditures translate into commensurate improvements in club performance, such as more wins or better league standings. Additionally, the project seeks to identify the types of players who tend to exceed or fall short of the expectations set by their transfer values. This includes examining if there is a consistent pattern in the types of players who overperform or underperform based on criteria like age, position, or nationality. By addressing these issues, the study aims to provide a more nuanced understanding of player valuation in the transfer market, offering valuable insights for club management strategies and the broader soccer community. </p> <h3>Motivations</h3> <p> The motivation for this project stems from a desire to deeply understand the intricacies of the Premier League's transfer market, a key element in maintaining the high quality of play that has made it the most popular soccer league in the world. This market assigns monetary values to players, a practice that raises questions about the true representation of a player's ability and contribution to team success. The study aims to explore whether these transfer values genuinely reflect player performance and, by extension, whether the substantial investments made by clubs in acquiring players are justified. A significant part of this motivation is also to provide insights that could enhance the strategic planning of clubs in their transfer activities, ensuring more effective allocation of resources for better team performance. Furthermore, while the focus is on the Premier League, the findings are anticipated to have broader implications, potentially informing strategies in other soccer leagues worldwide. This project, therefore, bridges the gap between the numerical values in the transfer market and actual on-field performance, offering a comprehensive understanding of the economics of soccer and its influence on the game’s competitive balance and quality. </p> <h3>Objectives</h3> <p> This project aims to investigate the correlation between a soccer player's market value and their performance, particularly in the English Premier League. It focuses on analyzing various factors including club values, player costs, and actual performance outcomes such as league standings, goals scored and conceded, and possession statistics. The objective is to evaluate the cost effectiveness of player transfers and determine their financial return. Additionally, the project seeks to identify player profiles that deliver high impact at relatively low costs, aiding in strategic decision-making for team management. This involves detailed statistical analysis, demographic investigation, and advanced data processing techniques, including OneHotEncoding and data integration, to create a comprehensive dataset for in-depth analysis. By uncovering the most impactful metrics in the prediction of a players transfer value, soccer players and club management alike could analyze cost-effectiveness and develop player profiles that have more inherent worth in the UK soccer community. </p> <h2>Methodology</h2> <h3>Data Acquisition</h3> <p> Data Acquisition We gathered our data through TransferMarkt as well as Kaggle. We condensed these datasets into one major dataset for ease of analysis, we made sure to pull historical player valuation data so we could compare the trends in existing player evaluations with our model. <br /> <br /> Top 5 Soccer leages | Kaggle player performance information from the 2022-2023 season <br /> <br /> Football data from TransferMarkt information on competitions, games, clubs, players and appearances that is automatically updated once a week </p> <h3>Data Cleaning and Manipulation</h3> <p> In our data analysis project, we began by loading datasets on players' profiles, valuations, and match appearances using pandas. We first filtered out entries with missing 'position' and 'agent_name' from the players' dataset to ensure data quality. Next, we employed a OneHotEncoder to numerically transform key categorical variables like competition IDs, positions, agent names, foot preference, and nationalities. This transformation was crucial to handle categorical data effectively. The encoded data, with newly generated column names, was then integrated back into the players' dataset after removing the original categorical columns. We streamlined the dataset by discarding less relevant columns like 'city_of_birth' and 'image_url', focusing on more impactful attributes. From the appearances dataset, we aggregated vital performance metrics such as goals, assists, and cards by player ID, providing a cumulative view of each player's on-field contributions. These enriched player profiles were then merged with the performance statistics. Additionally, we transformed 'date_of_birth' into an 'age' feature for more insightful analysis. After dropping NaN values, we obtained a final dataset that combines detailed player characteristics, performance data, and market values, offering a rich foundation for subsequent analytical exploration. Expanding on this comprehensive data preparation, we then meticulously structured our predictive model's feature set. Utilizing the one-hot encoded columns for country, club, foot, position, and agent data, alongside core performance metrics like yellow cards, goals, assists, and minutes played, we assembled a robust array of variables. This multi-faceted feature set was split into training and testing datasets, reserving 20% for testing, to robustly model and predict players' highest market values, leveraging the nuanced relationships within the data. Additionally in order to better analyze which features had the largest impact on our models we created visualizations which we could use to retroactively tweak the model to improve the r2 score (as shown below).  Concluding our Exploratory Data Analysis [EDA] as well as the steps we took to feature encode. </p> <h2>Model Considerations</h2> <p> KNN Regression Model: Utilizing K-Nearest Neighbors (KNN) regression in analyzing Premier League data offers simplicity and interpretability, which are significant advantages. However, its suitability is questionable for our project due to its limitations in handling noisy data and computational inefficiency with large datasets. Given our project's emphasis on managing large and complex datasets, these drawbacks render KNN less ideal. While its straightforward approach could offer clear insights, these technical constraints suggest the need for a more robust method in our context.<br /> <br /> SVM Regression Model: In our project, using Support Vector Machine (SVM) regression models comes with its pros and cons. While SVMs are great for handling complex, high dimensional data (which we have plenty of), they're versatile thanks to the kernel trick. But here's the issue: they're not the best with big datasets and can get tripped up by noisy data. Considering how soccer player valuations vary a lot and SVM relies on closeness to data points, it might not be the most efficient choice for our analysis.<br /> <br /> Random Tree Model Regression: The Random Forest regression model is particularly effective for our project because it handles non-linear data well, which is crucial given the complexity of soccer player valuations. It's also strong against overfitting, ensuring more reliable predictions. The downside is its complexity and high computational demands, particularly with large datasets, and it's not as straightforward to interpret. Overall, its ability to manage diverse data types and resist overfitting makes it a viable option for our analysis. </p> <h2>Result and Analysis</h2> <h3>Relative Success with Random Tree Regresor Model</h3> <p> After extensive analysis of various models, we identified the Random Forest Regressor as the most effective in predicting player transfer values. Notably, the model with 140 estimators yielded the best results, with a Mean Squared Error (MSE) of 34,748,586,321,505.96 and an R² Score of 0.746. While this performance surpasses other models, it still doesn't reach an ideal level of prediction accuracy for such a complex and dynamic market. The challenges in accurately modeling player transfer values are multifaceted. Firstly, the player transfer market is highly complex, with a multitude of influencing factors like performance statistics, age, position, market trends, and club dynamics. These variables are interwoven and subject to frequent changes. Our model incorporates these statistics, but the subjective nature of player evaluations often weakens the predictability of transfer values. In real world scenarios, player valuation heavily relies on subjective assessments from scouts, managers, and experts, who look beyond mere statistics to make judgment calls. This introduces a level of unpredictability and variability that our model can't fully capture. Moreover, the transfer market is influenced by external factors such as economic conditions, global events, and club-specific strategies, which can significantly alter player valuations. These dynamic market conditions create a range of values that can fluctuate widely based on current events or market shifts. Additionally, the relationships between input features and transfer values are likely non-linear and constantly evolving, adding another layer of complexity to our modeling efforts. Despite these challenges, our model offers a significant step forward in understanding and predicting player transfer values,  though it falls short of fully capturing the intricate dynamics of the football transfer market. With the assistance of intentional and comprehensive feature encoding, as well as hyper-parameter turning we were able to create a model with an r2 of .746 and a mse of roughly 5.8 million. Given that the valuation of soccer players in our data set ranged from less than 1 million to over 500 million dollars, we believe this to be an objective success. And if use in tandem with expert advice could provide some interesting insight for the presidents of soccer clubs. </p> <h3>Comparison with similar existing models</h3> <p> After extenThe development of models to predict transfer or market values of soccer players is a challenging task, and existing similar models in the field of soccer/futbol struggle to achieve consistently high r2 scores. A key reason for this difficulty is the impact of external factors, particularly the popularity or notoriety of players on social media platforms like Reddit and Twitter. Studies by Li, Kampakis, Treleaven, Fazenda, Costa, Garcia-Mas, and Carvalho (2022) highlight the significant role that the presence of a player's name in online discussions plays in influencing these models. The popularity of players in such threads can skew the data, making it difficult to accurately predict their market value based solely on performance or statistical data. Li states in his conclusion that a key way his model could be improved is through the includion of popularity metrics, stating “When selecting the features and getting the data, this research fails to get the data expressing the popularity of players (e.g., Wikipedia page views, Reddit posts). Therefore, to make the research more comprehensive, the popularity data of players need to be obtained” (Li, et al, 2022). Moreover McHale, while stating that Twitter followers wasn't a statistically significant feature in his own model, admits that in similar models it has been an effective means to increase r2 scores and the subsequent reliability of the model (McHale, et al, 2022) This highlights the complexity and the multifaceted nature of valuing soccer players, where online presence and public perception can significantly impact model outcomes. In summary, in comparison with other models in the field of soccer analytics, our model has room to improve but also performs comparatively well.sive analysis of various models, we identified the Random Forest Regressor as the most effective in predicting player transfer values. Notably, the model with 140 estimators yielded the best results, with a Mean Squared Error (MSE) of 34,748,586,321,505.96 and an R² Score of 0.746. While this performance surpasses other models, it still doesn't reach an ideal level of prediction accuracy for such a complex and dynamic market. The challenges in accurately modeling player transfer values are multifaceted. Firstly, the player transfer market is highly complex, with a multitude of influencing factors like performance statistics, age, position, market trends, and club dynamics. These variables are interwoven and subject to frequent changes. Our model incorporates these statistics, but the subjective nature of player evaluations often weakens the predictability of transfer values. In real world scenarios, player valuation heavily relies on subjective assessments from scouts, managers, and experts, who look beyond mere statistics to make judgment calls. This introduces a level of unpredictability and variability that our model can't fully capture. Moreover, the transfer market is influenced by external factors such as economic conditions, global events, and club-specific strategies, which can significantly alter player valuations. These dynamic market conditions create a range of values that can fluctuate widely based on current events or market shifts. Additionally, the relationships between input features and transfer values are likely non-linear and constantly evolving, adding another layer of complexity to our modeling efforts. Despite these challenges, our model offers a significant step forward in understanding and predicting player transfer values,  though it falls short of fully capturing the intricate dynamics of the football transfer market. With the assistance of intentional and comprehensive feature encoding, as well as hyper-parameter turning we were able to create a model with an r2 of .746 and a mse of roughly 5.8 million. Given that the valuation of soccer players in our data set ranged from less than 1 million to over 500 million dollars, we believe this to be an objective success. And if use in tandem with expert advice could provide some interesting insight for the presidents of soccer clubs. </p> <h3>Ways to Improve</h3> <p> To enhance our model's accuracy in predicting player transfer values, several improvements can be implemented. First, incorporating more granular and diverse data points, such as detailed player performance metrics over multiple seasons, psychological assessments, and injury history, could provide a more holistic view of a player's value. Additionally, integrating external factors like market trends, economic conditions, and club financial health could capture the dynamic nature of the transfer market more effectively. Implementing advanced machine learning techniques like ensemble methods or deep learning could also help capture complex, non-linear relationships within the data. Regularly updating the model with recent data and trends will ensure its relevance over time. Additionally, collaboration with football experts to include subjective assessments and tacit knowledge in the model could bridge the gap between statistical analysis and real-world evaluations, potentially leading to more accurate predictions. Including qualitative (turned quantitative) could thus be invaluable. In the future as we continue to work on this model, we believe that the incorporation of these factors could lead to a tool accurate enough (in this context accuracy is a higher r2 score) to be used in a professional environment. </p> <h2>The Impact</h2> <p> We acknowledge that our model is far from perfect; however, we firmly believe that a model of its kind, or even an enhanced version of the same model with more extensive and diverse data, has the potential to have a profound impact on the global soccer community. This impact extends beyond the world of soccer fans and enthusiasts and can influence society as a whole. With the creation of a predictive model for player transfer valuations in the dynamic transfer market, we open the door to several opportunities. Our model can address subtle biases in player valuation, ensure fair recognition of talent from regions like the global south, analyze the factors contributing to player desirability, promote data-driven discussions in mainstream media, and foster inclusivity and diversity within the sport. Since a large amount of recruiting is done overseas in countries like Senegal, India, Ghana and Nigeria, a tool that allows players to know their worth comparatively could lead to a more equitable and fair compensation system. With the model itself serving as way to increase pay transparency in the field. If this model additionally were adapted to include more statistics about women, it could be a tool used in the conversation about the gender pay gap in athletics. And finally it could lead to a more interesting game! Through the creation of a tool that can conversely be used by the presidents of clubs to put together a team of (cost-effective) high performing players the sport itself would inevitably have more interesting matches, like the World Cup coming up.  Ultimately, by continuing to refine and expand upon this model, we can contribute to a more equitable and data-driven approach to player valuation, benefiting fans, players, and clubs while enhancing the overall soccer community. </p> <h2>Conlusion</h2> <p> We set out to create a robust model for predicting soccer player transfer valuations, intending to accurately correlate player performance with their market value. And we did just that. Utilizing a Random Forest Regressor with 140 estimators, achieving an R² score of 0.746, our journey has been enlightening, challenging and relatively successful. Our final and most recent iteration of the model not only marks significant advancement from previous versions, but it also underscores the inherent complexities in player valuation. Our objective was to create a model that is able to predict the transfer value of soccer players based on their available statistics, leaving the league with a tool thats able to, without bias, evaluate players against each other and allowing players to value themselves against other players with similar statistics and characteristics, while also identifying emerging trends. Through the creation of a model with an r2 we have begun to do just that, with room for improvement on this iteration. Despite hurdles, our model shows potential in positively influencing the soccer world. It's not just about technical prowess; our ambition is to leverage data science for fostering a more inclusive, equitable, and analytically informed soccer community. As we look ahead, our commitment is steadfast in refining our approach, enriching our dataset with more diverse variables, and continuing collaborative efforts to push the frontiers of data science in soccer (and athletics in general), ultimately making a meaningful contribution to the sport's analytical landscape. </p> <h2>Bibliography</h2> <p> [1] Tatiana Fazenda, Aldo M. Costa, Alexandre Garcia-Mas & Pedro G. Carvalho (2022) How media influence is perceived by professional soccer players: a qualitative case study in Portugal, Sport in Society, 25:12, 2541-2552,DOI: 10.1080/17430437.2021.1944115 <br /> [2] McHale, Ian G., and Benjamin Holmes. “Estimating Transfer Fees of Professional Footballers Using Advanced Performance Metrics and Machine Learning.” European Journal of Operational Research, vol. 306, no. 1, 20 June 2022, <br /> [3]“Top 5 Soccer Leagues.” Kaggle.com, www.kaggle.com/code/thabomahlaha/top-5-soccer-leagues. Accessed 3 Dec. 2023. www.kaggle.com. (2023).<br /> [4] Football Data from Transfermarkt. [online] <br /> [5]Li, C., Kampakis, S. and Treleaven, P. (n.d.). Machine Learning Modeling to Evaluate the Value of Football Players. [online] </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project" onclick="openModal('myModal2')">
+                <img src="img\reversi.png" alt="Reversi Game Development">
+                <div class="project-title">Reversi Game Development</div>
+                <div class="project-description">
+                    The project involved developing a Reversi game using Java, featuring a hexagonal grid, adaptable to various sizes and adhering to the standard rules for two players. It was built on a model-view-controller architecture, with the model handling the game's state, rules, and interactions, while the view provided textual output, designed with potential for future graphical upgrades. This endeavor showcases advanced Java application in algorithm creation, game development, AI strategies, and comprehensive unit testing. CLICK TO READ MORE
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>Reversi Game</h1>
+                            <p> Developing the Reversi game project involved meticulous planning and execution. Initially, the game's fundamental design was conceptualized, ensuring it adhered to standard Reversi rules but on a hexagonal grid, allowing for a unique gameplay experience. Key components such as the game board, state, and rules were established within the model, with the view handling simple textual output and the controller to be developed for managing inputs and system control flow. <br /> <br /> Subcomponents including player representation, game state, and grid coordinates were defined to facilitate game mechanics. The development process also included the integration of new classes and interfaces, enhancing functionality and user interaction. Mock models were introduced for testing purposes, ensuring robustness in grid coordinate handling and move validation. <br /> <br /> For user interaction, clickable cells and keyboard shortcuts were implemented, allowing players to select or deselect cells, place discs, or pass their turn. To improve the game logic, new methods were added to the model interface, and existing logic was refined to prevent illegal moves and provide a smoother gameplay experience. <br /> <br /> Subsequent updates focused on eliminating nulls in favor of optionals and lists, streamlining communication between the model and controllers through a callback interface, and introducing a broadcaster interface for model updates. The game state management was enhanced to handle game start and end conditions more effectively. <br /> <br /> The view underwent significant changes, with new methods added to the interface for improved user feedback and interaction, and the panel adapted to accommodate action listeners for mouse and keyboard events. The player component was refined to differentiate between human and AI players, with the latter using strategic algorithms to determine moves. <br /> <br /> Throughout the project, extensive testing and iterations were conducted to ensure the accuracy of game mechanics and the quality of user experience. The implementation demonstrated a commitment to creating a functional and engaging rendition of the Reversi game, showcasing the developers' skills in Java programming and software design. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project" onclick="openModal('myModal3')">
+                <img src="img\karakaslargroup.png" alt="Karakaslar Group Application">
+                <div class="project-title">Karakaslar Group Application</div>
+                <div class="project-description">
+                    The founder of "Karakaşlar Group" requested an application to streamline the approval of worker requests, leading to the creation of a system with three types of accounts: manager, employee, and accountant. Employees can submit entries for necessary items, which managers can approve or decline, while accountants monitor all entries without approval rights. The application features secure login, personalized entry visibility, categorization, and historical data analysis. CLICK TO READ MORE
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>KarakaslarGroup App</h1>
+                            <p> My client is the founder of the construction company called “Karakaşlar Group.” My client builds shopping malls and manages some of them. He told me that he had a hard time managing the requirements and expenses, therefore, he asked me to write an application that would allow him to approve and decline entries from workers. There are 3 types of accounts. The manager account, employee account and accountant account. From create account page, the user can create their account. They will have to choose which type of account they want to create, then from this page, they will enter a username, a password and the specific password for the account they want to create.  If this specific password is wrong, the account wouldn’t be created and an error message would pop up informing the user that the password is incorrect. This specific password would prevent workers or accountants from creating a managers account. Once the account is created, they would be able to login with their username and password. If the user enters a non-existent username or password, or the username and password does not match, they won’t be able to login and a message would pop up informing that the username or password is incorrect. <br /> <br /> Let’s enter to an employee’s account first. This is the main page that the employee sees when they login. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. It is important that they only see the entries they did, they cannot see the entries that another employee enters. They would also be able to search for specific words from the entries they have made. The employee can also make new entries. In order to do so, they would have to click the new entry button on the top right corner. The username data is carried on this page. The user enters the item they request, the price of the item and the explanation for why they need that item and press enter in order to make the request. The request is added to the database with the username and the date at which the entry was made. The new entry is added into the previous entries on the home page of the employee account. <br /> <br /> Now let’s look at a manager’s account. The first page that comes up is the home page. The manager would be able to see all the awaiting entries made by the employees. They would be able to approve or decline the entries. The manager would be able to see the whole history of entries from the history page. They would be able to see their previous entries separated into 3 categories, the entries waiting for approval, the entries accepted and declined. In addition to the employees account, the manager would be able to see the total price for each category and in total. Also the manager would be able to see all the entries entered daily, monthly and yearly. Furthermore, the manager would be able to search for specific words in the entries and the data would be updated accordingly. <br /> <br /> The last one is the accountant account. The accountant account is very similar to the manager account, with the only difference being that accountants cannot approve or decline offers, they can only monitor the whole entries entered by every worker. <br /> <br /> There are also some improvements that could be made. Firstly, entry categories could be made in order for the entries to be more neatly organised. Secondly, a calendar page could be added to the manager’s account and the accountant’s account. This would help them see every entry day by day visually. Furthermore, the history page could have been written to a pdf in order for it to be printed with ease or secured in the accountancy. Lastly, a mobile application could also be made in order for the users to be able to access the database without the need of a computer </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project" onclick="openModal('myModal4')">
+                <img src="img\secimodasi.png" alt="The Safe Election Room Project">
+                <div class="project-title">The Safe Election Room Project</div>
+                <div class="project-description">
+                    The project introduced an innovative voting system utilizing barcodes, sensors, and Arduino to ensure election integrity, which gained media recognition in Fortune 40 magazine as a potential solution for election security challenges. It was honored with the First Place Award at the International ROBORAVE Robotics Competition in May 2019, showcasing its effectiveness and ingenuity in creating a secure and fair voting environment. This accomplishment not only highlights technological innovation but also contributes to the ongoing discussion on improving electoral processes worldwide. CLICK TO READ MORE
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>Election Room Project</h1>
+                            <p>This project is an election room project developed to help solve the problems or confusion experienced while voting in elections in our country and to ensure election security with digital measures. “How will ballot box and voting security be ensured in elections?” The issue is discussed before every election. The number of citizens going to vote is decreasing day by day due to alleged disruptions and fraudulent claims after the elections.</p> <h2>Construction stages of the project</h2> <h3>Saving Voter Information to the System</h3> <p>The records of the voters who will vote in the election rooms are recorded in the system by the district election boards according to their TR ID numbers. Records are kept in Eprom.</p> <h3>Card Entry to the Election Room</h3> <p>All entrances will be kept under control with a card control system at the entrance of the election rooms. Voters will enter the election rooms by scanning their ID cards. The LED light on the access control system initially glows white to indicate that the system is operating. It says “READY” on the LCD screen.</p> <h3>Entry Inside</h3> <p>As the voter enters the door, an ultrasonic distance sensor controls the passage, and 5 seconds after the voter enters, the LED turns white again and "READY TO VOTE" appears on the screen. The system becomes active again.</p> <h3>Voting</h3> <p>5x8 cm ballot papers are used in every election. A serious waste of paper occurs when unused ballot papers are thrown away. In addition, the size of the ballot papers is much larger than the ballot papers in the system we developed. Therefore, serious damage is caused to the environment. This method aims to significantly reduce paper waste during elections.</p> <h3>Envelope Control</h3> <p>After the voting process takes place in the booth, the envelope is put into the weight control circuit. If the weight of the envelope is within the predetermined weight range, the envelope is considered valid. This control serves as a deterrent, thus preventing counterfeit paper printing and placing foreign objects in envelopes.</p> <h3>Instant Automatic Vote Counting at the Ballot Box</h3> <p>The votes cast in the ballot box will be counted with the help of an ultrasonic sensor and the number of votes cast will be displayed instantly on the LCD screen above the ballot box.</p> <h3>Counting the Votes</h3> <p>In the system I have set up, after the voting process is completed, the votes will be counted using the phone application, with the QR code reading system, and the counting results will be automatically sent to the election board via e-mail. To carry out this process, the ballot box chairman will use the phone application prepared by the district election board, which he will download to his phone.</p> <h2>Technical description of the project</h2> <p>Card Entry to the Election Room Two different Arduino circuits are connected wirelessly. The data read from the Arduino to which the card reader is connected will be sent to the other Arduino via RF24, and the TR ID number of the person entering the hall will be written on the hall president's screen.</p> <h2>Originality</h2> <p>The aim of this project is to establish secure election rooms using today's technologies and to improve and facilitate the election process. Thus, every citizen's right to vote will be protected, as in all democracies, through an election that is independent and impartial from parties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project" onclick="openModal('myModal5')">
+                <img src="img\geleceksizin.png" alt="The Future is Yours Book Project">
+                <div class="project-title">The Future is Yours Book Project</div>
+                <div class="project-description">
+                    My sister and I, as juniors in high school, launched a heartfelt initiative: we interviewed inspiring personalities and compiled a book to fund the purchase of medical equipment for a pediatric hospital. Proceeds from our book sales are also set to support educational endeavors, providing tablets and chess sets for middle schoolers, complemented by online chess and coding classes. Our endeavor has been a success, selling 600 copies in just a month, fueled by social media and notable endorsements. CLICK TO READ MORE
+                </div>`
+            </div>
+            <!-- The Modal -->
+            <div id="myModal5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal5')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>The Future is Yours</h1>
+                            <p> Me and my sister are 11th grade students. When we were in the 4th grade of primary school, we decided to make a donation for the first time and spent our New Year's allowance to buy gifts for sick children in the Department of Child Oncology at 9 Eylül University. We packed the gifts we bought and left them under the Christmas tree we set up in the hospital. We felt very good that day. That's when we learned that helping others not only makes them happy, but also it makes you happy, too. Later, we continued doing small favors the following years. When the new 9 Eylül University Children's Hospital was opened, we designed notice boards with animal figures and hung them on its walls. We sold second-hand clothes during summer holidays and provided stationery to the Kuşadası Handicapped Protection Association. <br /> <br /> This year we wanted to make a bigger and multi-purpose project. We decided to interview successful people and then publish a book. We planned to buy a medical device with a large part of the proceeds from the sale of this book. We selected 18 people and sent them an e-mail about our project via social media. Fazıl Say, Filiz Sarper, Erhan Erkut, Azra Kohen, Yılmaz Büyükerşen, Murat Özyeğin, Fahir Atakoğlu, Selçuk Şirin, Mehmet Öz, Nasuh Mahruki and Ufuk Tarhan stated that they will support the project. We sent them questions about their jobs and life experiences. <br /> <br /> In the meantime, we got in touch with the Head of Pediatric Hematology Department of 9 Eylül University (DEUTF), Prof. Dr. Hale Ören and learned what kind of help we could do. First of all, with the money collected, we decided to buy the device they needed for the children's emergency department. We then contacted EÇEV to start a sustainable project with the remaining money. We planned to buy tablets and chess sets for middle school students at EÇEV and give them online chess and coding lessons. Thus, we started to work to implement a project where high school students like us can get information and inspiration from people who are successful in their jobs, and that will benefit the society in terms of health and education. <br /> <br /> Our book arrived on the 2nd of March. We immediately opened the @geleceksizinolsun instagram account and started sharing on all our social media accounts. We are selling the books only from this account. İsmail Küçükkaya introduced our book in the "Çalar Saat" program. Fazıl Say, Azra Kohen and Erhan Erkut shared our book on their social media accounts. We sold about 600 books in a month. We are hoping to go to the second edition as soon as possible. <br /> <br /> We had a big dream and worked hard. We would like to thank everyone who believed in us, trusted us, and supported our project by answering our questions. <br /> <br /> If you want to contribute too, you can follow us on @geleceksinolsun on our instagram account. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project" onclick="openModal('myModal6')">
+                <img src="img\websitePhoto.png" alt="Personal Website Project">
+                <div class="project-title">Personal Website Project</div>
+                <div class="project-description">
+                    This project involves creating a personal website to showcase academic and project work, including a dynamic homepage featuring real-time interactive elements. It serves as a portfolio, highlighting skills in web development, design, and content organization. The website also includes a contact section, enhancing communication with potential collaborators or employers.
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal6" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('myModal6')">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-description">
+                            <h1>Personal Website</h1>
+                            <p>
+                                Creating a website is a journey that involves several stages, from conception to execution. This particular website was crafted as a comprehensive platform to reflect a personal and professional profile. The development process commenced with the design phase, using Adobe Illustrator to create a unique and appealing visual layout. The choice of a stylized map of Boston as a background lends a personal touch, signaling the developer's connection to the city. <br /> <br />
+                                The technical construction of the site involved HTML, CSS, and JavaScript, which are the building blocks of web development. HTML laid the foundational structure, CSS was employed for styling and creating a visually engaging experience, and JavaScript added interactivity and dynamic elements. These technologies were carefully woven together to ensure a seamless user experience across various devices. <br /> <br />
+                                Each step in the development process was taken with careful consideration of the end goal: to create a personal website that not only showcased the developer's technical skills but also conveyed their personal story and professional journey. The final product is a testament to the developer's dedication to learning and personal growth, embodying both their expertise in web development and their creative approach to design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
+
 </html>

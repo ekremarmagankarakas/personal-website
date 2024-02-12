@@ -1,5 +1,5 @@
 function createBubble() {
-    const heroSection = document.querySelector('.hero');
+    const heroSection = document.querySelector('.home-bubble');
     const skills = ["Python", "Java", "Racket", "C", "C++", "Go", "HTML", "CSS", "JavaScript", "Arduino", "Raspberry-Pi", "Git", "Amazon Workspace", "WordPress", "Flutter", "Eclipse", "Jupyter Notebook", "RStudio", "IntelliJ", "Dr. Racket", "PyCharm", "Android Studio", "MariaDB", "MySQL", "HeidiSQL", "VMware", "VirtualBox", "WordPress", "Visual Studio Code"];
     const skill = skills[Math.floor(Math.random() * skills.length)];
     const createElement = document.createElement('span');
@@ -20,26 +20,54 @@ function createBubble() {
         createElement.remove();
     }, 4000);
 }
-setInterval(createBubble, 600);
+setInterval(createBubble, 1000);
 
-function toggleSidebar() {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("active");
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Select all links with hashes
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+// scroll sections
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-            // The element you wish to scroll to.
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            // active navbar links
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-        });
+            // active sections for animation on scroll
+            sec.classList.add('show-animate');
+        }
+        // if want to use animation that repeats on scroll use this
+        else {
+            sec.classList.remove('show-animate');
+        }
     });
-});
+
+    // sticky header
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    // remove toggle icon and navbar when click navbar links (scroll)
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
+}
+
 function openModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "block";
@@ -61,9 +89,11 @@ window.onclick = function (event) {
 }
 
 const projects = document.querySelectorAll('.project');
+const projectsHeaders = document.querySelectorAll('.projectsHeader');
+
 
 const options = {
-    threshold: 0.5, // Detect when 50% of the element is visible
+    threshold: 0.05, // Detect when 50% of the element is visible
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -71,9 +101,16 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animated');
         }
+        else {
+            entry.target.classList.remove('animated');
+        }
     });
 }, options);
 
 projects.forEach((project) => {
     observer.observe(project);
+});
+
+projectsHeaders.forEach((projectsHeader) => {
+    observer.observe(projectsHeader);
 });
