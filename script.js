@@ -11,7 +11,7 @@ function createBubble() {
     createElement.style.height = `${size}px`;
     createElement.style.lineHeight = `${size}px`; // Center text vertically
 
-    createElement.style.left = `${Math.random() * (heroSection.offsetWidth - size - 600)}px`;
+    createElement.style.left = `${Math.random() * (heroSection.offsetWidth - size)}px`;
     createElement.style.top = `-100px`; // Start above the screen
 
     heroSection.appendChild(createElement);
