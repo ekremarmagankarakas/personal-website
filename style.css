@@ -566,12 +566,8 @@ section:nth-child(odd) .animate.scroll,
     width: 105%;
 }
 
-.about.show-animate .animate.scroll,
 .projects.show-animate .animate.scroll,
-.education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
+.contact.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
@@ -581,6 +577,10 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+    }
+
+    .project {
+        flex-basis: 40%;
     }
 }
 
@@ -666,12 +666,6 @@ section:nth-child(odd) .animate.scroll,
             transform: translateX(0);
             transition-delay: .25s;
         }
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
-    }
 
     .project {
         flex-basis: 100%;
